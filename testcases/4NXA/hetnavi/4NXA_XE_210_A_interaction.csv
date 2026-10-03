@@ -1,0 +1,6 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,26,25,GLY,B,1,0,XE,210,A,10
+A,29,28,ILE,S,2,0,XE,210,A,10
+A,30,29,LEU,S,2,0,XE,210,A,10
+A,69,68,VAL,S,2,0,XE,210,A,10
+A,70,69,LEU,S,2,0,XE,210,A,10

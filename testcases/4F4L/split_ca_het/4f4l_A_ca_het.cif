@@ -1,0 +1,161 @@
+data_4F4L
+#
+_entry.id 4F4L
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 polymer 'Ion transport protein'
+#
+loop_
+_entity_poly.entity_id
+_entity_poly.type
+_entity_poly.nstd_linkage
+_entity_poly.pdbx_strand_id
+1 polypeptide(L) no A
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+ALA 'L-peptide linking'
+ARG 'L-peptide linking'
+ASN 'L-peptide linking'
+ASP 'L-peptide linking'
+GLN 'L-peptide linking'
+GLU 'L-peptide linking'
+GLY 'peptide linking'
+HIS 'L-peptide linking'
+ILE 'L-peptide linking'
+LEU 'L-peptide linking'
+LYS 'L-peptide linking'
+MET 'L-peptide linking'
+PHE 'L-peptide linking'
+PRO 'L-peptide linking'
+SER 'L-peptide linking'
+THR 'L-peptide linking'
+TRP 'L-peptide linking'
+TYR 'L-peptide linking'
+VAL 'L-peptide linking'
+#
+loop_
+_atom_type.symbol
+C
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+ATOM 1 C CA . SER A 1 8 ? -21.790 -2.787 -29.222 1.00 185.18 ? 8 SER A CA 1
+ATOM 2 C CA . VAL A 1 9 ? -18.501 -0.916 -28.299 1.00 183.09 ? 9 VAL A CA 1
+ATOM 3 C CA . ALA A 1 10 ? -19.600 -1.345 -24.624 1.00 178.76 ? 10 ALA A CA 1
+ATOM 4 C CA . ALA A 1 11 ? -19.673 -5.140 -25.183 1.00 175.98 ? 11 ALA A CA 1
+ATOM 5 C CA . LEU A 1 12 ? -15.912 -5.322 -26.019 1.00 172.55 ? 12 LEU A CA 1
+ATOM 6 C CA . LEU A 1 13 ? -14.745 -2.569 -23.593 1.00 169.46 ? 13 LEU A CA 1
+ATOM 7 C CA . THR A 1 14 ? -16.358 -4.579 -20.696 1.00 164.87 ? 14 THR A CA 1
+ATOM 8 C CA . VAL A 1 15 ? -14.289 -7.564 -21.907 1.00 165.51 ? 15 VAL A CA 1
+ATOM 9 C CA . VAL A 1 16 ? -11.089 -5.340 -22.106 1.00 162.29 ? 16 VAL A CA 1
+ATOM 10 C CA . PHE A 1 17 ? -11.672 -4.040 -18.524 1.00 156.75 ? 17 PHE A CA 1
+ATOM 11 C CA . TYR A 1 18 ? -12.254 -7.669 -17.296 1.00 152.74 ? 18 TYR A CA 1
+ATOM 12 C CA . ILE A 1 19 ? -8.985 -8.919 -18.974 1.00 153.17 ? 19 ILE A CA 1
+ATOM 13 C CA . ALA A 1 20 ? -6.810 -6.034 -17.583 1.00 151.95 ? 20 ALA A CA 1
+ATOM 14 C CA . ALA A 1 21 ? -8.501 -6.281 -14.111 1.00 152.18 ? 21 ALA A CA 1
+ATOM 15 C CA . VAL A 1 22 ? -7.725 -10.022 -13.916 1.00 152.05 ? 22 VAL A CA 1
+ATOM 16 C CA . MET A 1 23 ? -4.180 -9.301 -15.224 1.00 150.99 ? 23 MET A CA 1
+ATOM 17 C CA . ALA A 1 24 ? -3.489 -6.380 -12.770 1.00 147.17 ? 24 ALA A CA 1
+ATOM 18 C CA . THR A 1 25 ? -4.856 -8.370 -9.713 1.00 142.78 ? 25 THR A CA 1
+ATOM 19 C CA . ASN A 1 26 ? -2.365 -11.200 -10.442 1.00 144.81 ? 26 ASN A CA 1
+ATOM 20 C CA . LEU A 1 27 ? 0.464 -8.698 -11.272 1.00 142.12 ? 27 LEU A CA 1
+ATOM 21 C CA . TYR A 1 28 ? 0.195 -5.947 -8.653 1.00 141.68 ? 28 TYR A CA 1
+ATOM 22 C CA . GLY A 1 29 ? -2.296 -7.165 -5.946 1.00 144.89 ? 29 GLY A CA 1
+ATOM 23 C CA . ALA A 1 30 ? 0.553 -8.555 -3.805 1.00 142.59 ? 30 ALA A CA 1
+ATOM 24 C CA . THR A 1 31 ? 2.473 -5.247 -3.488 1.00 137.98 ? 31 THR A CA 1
+ATOM 25 C CA . PHE A 1 32 ? -0.536 -2.878 -3.901 1.00 136.20 ? 32 PHE A CA 1
+ATOM 26 C CA . PRO A 1 33 ? -3.513 -4.569 -2.176 1.00 136.44 ? 33 PRO A CA 1
+ATOM 27 C CA . GLU A 1 34 ? -5.359 -1.273 -1.564 1.00 142.98 ? 34 GLU A CA 1
+ATOM 28 C CA . TRP A 1 35 ? -5.599 -0.743 -5.398 1.00 145.40 ? 35 TRP A CA 1
+ATOM 29 C CA . PHE A 1 36 ? -5.111 -4.277 -6.893 1.00 150.97 ? 36 PHE A CA 1
+ATOM 30 C CA . GLY A 1 37 ? -5.544 -6.917 -4.141 1.00 158.49 ? 37 GLY A CA 1
+ATOM 31 C CA . ASP A 1 38 ? -9.092 -7.796 -5.353 1.00 158.95 ? 38 ASP A CA 1
+ATOM 32 C CA . LEU A 1 39 ? -10.640 -8.241 -8.790 1.00 152.72 ? 39 LEU A CA 1
+ATOM 33 C CA . SER A 1 40 ? -13.221 -5.637 -7.641 1.00 147.86 ? 40 SER A CA 1
+ATOM 34 C CA . LYS A 1 41 ? -10.409 -3.291 -6.331 1.00 142.25 ? 41 LYS A CA 1
+ATOM 35 C CA . SER A 1 42 ? -8.606 -3.557 -9.760 1.00 131.66 ? 42 SER A CA 1
+ATOM 36 C CA . LEU A 1 43 ? -11.906 -2.757 -11.452 1.00 122.83 ? 43 LEU A CA 1
+ATOM 37 C CA . TYR A 1 44 ? -12.176 0.489 -9.377 1.00 114.23 ? 44 TYR A CA 1
+ATOM 38 C CA . THR A 1 45 ? -8.483 1.391 -9.967 1.00 108.43 ? 45 THR A CA 1
+ATOM 39 C CA . LEU A 1 46 ? -8.626 0.749 -13.715 1.00 108.18 ? 46 LEU A CA 1
+ATOM 40 C CA . PHE A 1 47 ? -11.764 2.881 -14.160 1.00 107.62 ? 47 PHE A CA 1
+ATOM 41 C CA . GLN A 1 48 ? -10.062 5.812 -12.265 1.00 110.19 ? 48 GLN A CA 1
+ATOM 42 C CA . VAL A 1 49 ? -7.012 5.335 -14.527 1.00 111.72 ? 49 VAL A CA 1
+ATOM 43 C CA . MET A 1 50 ? -9.455 5.419 -17.516 1.00 122.94 ? 50 MET A CA 1
+ATOM 44 C CA . THR A 1 51 ? -10.971 8.738 -16.326 1.00 116.58 ? 51 THR A CA 1
+ATOM 45 C CA . LEU A 1 52 ? -7.198 9.717 -16.108 1.00 114.10 ? 52 LEU A CA 1
+ATOM 46 C CA . GLU A 1 53 ? -7.544 10.938 -12.473 1.00 116.11 ? 53 GLU A CA 1
+ATOM 47 C CA . SER A 1 54 ? -4.146 10.647 -10.715 1.00 111.21 ? 54 SER A CA 1
+ATOM 48 C CA . TRP A 1 55 ? -3.237 7.663 -12.923 1.00 105.37 ? 55 TRP A CA 1
+ATOM 49 C CA . SER A 1 56 ? 0.442 8.713 -13.103 1.00 97.30 ? 56 SER A CA 1
+ATOM 50 C CA . MET A 1 57 ? 1.319 10.587 -9.881 1.00 92.01 ? 57 MET A CA 1
+ATOM 51 C CA . GLY A 1 58 ? -1.226 8.617 -7.839 1.00 98.74 ? 58 GLY A CA 1
+ATOM 52 C CA . ILE A 1 59 ? -1.041 5.031 -9.308 1.00 103.67 ? 59 ILE A CA 1
+ATOM 53 C CA . VAL A 1 60 ? 1.518 4.275 -12.093 1.00 103.64 ? 60 VAL A CA 1
+ATOM 54 C CA . ARG A 1 61 ? 4.523 6.224 -10.646 1.00 107.76 ? 61 ARG A CA 1
+ATOM 55 C CA . PRO A 1 62 ? 4.255 4.501 -7.158 1.00 107.74 ? 62 PRO A CA 1
+ATOM 56 C CA . VAL A 1 63 ? 3.779 1.039 -8.823 1.00 107.68 ? 63 VAL A CA 1
+ATOM 57 C CA . MET A 1 64 ? 6.926 1.706 -10.921 1.00 114.54 ? 64 MET A CA 1
+ATOM 58 C CA . ASN A 1 65 ? 9.014 2.131 -7.711 1.00 125.15 ? 65 ASN A CA 1
+ATOM 59 C CA . VAL A 1 66 ? 8.222 -1.604 -7.016 1.00 128.27 ? 66 VAL A CA 1
+ATOM 60 C CA . HIS A 1 67 ? 7.747 -3.021 -10.553 1.00 135.86 ? 67 HIS A CA 1
+ATOM 61 C CA . PRO A 1 68 ? 9.587 -0.625 -12.918 1.00 132.82 ? 68 PRO A CA 1
+ATOM 62 C CA . ASN A 1 69 ? 8.406 -0.571 -16.551 1.00 129.45 ? 69 ASN A CA 1
+ATOM 63 C CA . ALA A 1 70 ? 4.778 -1.447 -15.425 1.00 124.14 ? 70 ALA A CA 1
+ATOM 64 C CA . TRP A 1 71 ? 3.933 1.557 -17.742 1.00 121.03 ? 71 TRP A CA 1
+ATOM 65 C CA . VAL A 1 72 ? 4.055 -1.155 -20.410 1.00 119.31 ? 72 VAL A CA 1
+ATOM 66 C CA . PHE A 1 73 ? 0.696 -2.341 -18.933 1.00 114.82 ? 73 PHE A CA 1
+ATOM 67 C CA . PHE A 1 74 ? -0.694 1.106 -18.122 1.00 118.07 ? 74 PHE A CA 1
+ATOM 68 C CA . ILE A 1 75 ? 0.123 3.430 -21.067 1.00 115.78 ? 75 ILE A CA 1
+ATOM 69 C CA . PRO A 1 76 ? -1.359 0.796 -23.547 1.00 121.71 ? 76 PRO A CA 1
+ATOM 70 C CA . PHE A 1 77 ? -4.387 0.291 -21.263 1.00 128.96 ? 77 PHE A CA 1
+ATOM 71 C CA . ILE A 1 78 ? -4.793 4.095 -21.395 1.00 129.87 ? 78 ILE A CA 1
+ATOM 72 C CA . MET A 1 79 ? -4.606 4.226 -25.247 1.00 129.51 ? 79 MET A CA 1
+ATOM 73 C CA . LEU A 1 80 ? -7.015 1.251 -25.656 1.00 132.29 ? 80 LEU A CA 1
+ATOM 74 C CA . THR A 1 81 ? -9.683 2.502 -23.171 1.00 140.31 ? 81 THR A CA 1
+ATOM 75 C CA . THR A 1 82 ? -9.340 6.183 -24.279 1.00 148.41 ? 82 THR A CA 1
+ATOM 76 C CA . PHE A 1 83 ? -9.589 5.175 -28.016 1.00 157.36 ? 83 PHE A CA 1
+ATOM 77 C CA . THR A 1 84 ? -12.750 3.013 -27.446 1.00 158.39 ? 84 THR A CA 1
+ATOM 78 C CA . VAL A 1 85 ? -14.450 5.895 -25.530 1.00 165.54 ? 85 VAL A CA 1
+ATOM 79 C CA . LEU A 1 86 ? -14.412 8.081 -28.758 1.00 169.99 ? 86 LEU A CA 1
+ATOM 80 C CA . ASN A 1 87 ? -15.663 5.022 -30.787 1.00 170.64 ? 87 ASN A CA 1
+ATOM 81 C CA . LEU A 1 88 ? -18.512 4.753 -28.194 1.00 172.17 ? 88 LEU A CA 1
+ATOM 82 C CA . PHE A 1 89 ? -18.992 8.596 -28.037 1.00 174.73 ? 89 PHE A CA 1
+ATOM 83 C CA . ILE A 1 90 ? -19.577 8.454 -31.835 1.00 180.14 ? 90 ILE A CA 1
+ATOM 84 C CA . GLY A 1 91 ? -21.239 5.014 -31.296 1.00 183.12 ? 91 GLY A CA 1
+ATOM 85 C CA . ILE A 1 92 ? -24.332 6.873 -29.945 1.00 185.81 ? 92 ILE A CA 1
+ATOM 86 C CA . ILE A 1 93 ? -24.219 9.825 -32.458 1.00 207.76 ? 93 ILE A CA 1
+#

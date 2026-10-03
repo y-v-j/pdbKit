@@ -1,0 +1,130 @@
+# pdbKit AlphaFold case study: AF-P0A334-F1 - KcsA potassium channel (1K4C)
+
+$ pdbkit fetch P0A334 --pae -d .
+./AF-P0A334-F1.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit fetch P0A334 -f pdb -d .
+./AF-P0A334-F1.pdb
+  -> exit 0 in 0.6s
+
+$ pdbkit info AF-P0A334-F1.cif --table json -o info.json
+  -> exit 0 in 0.5s
+
+$ pdbkit validate AF-P0A334-F1.cif
+OK: cif file, 1 model(s), 1250 atoms
+  -> exit 0 in 0.5s
+
+$ pdbkit exper AF-P0A334-F1.cif
+id	AF-P0A334-F1
+title	NA
+classification	NA
+organism	NA
+method	NA
+resolution	NA
+r_work	NA
+r_free	NA
+  -> exit 0 in 0.5s
+
+$ pdbkit fasta AF-P0A334-F1.cif -d .
+./AF-P0A334-F1.fasta
+  -> exit 0 in 0.5s
+
+$ pdbkit com AF-P0A334-F1.cif
+x	8.0925
+y	6.2332
+z	-7.5481
+weighting	mass
+radius_of_gyration	33.8232
+  -> exit 0 in 0.5s
+
+$ pdbkit center AF-P0A334-F1.cif -o AF-P0A334-F1_centered.cif
+  [stderr] centre of mass before: 8.0925 6.2332 -7.5481
+  [stderr] wrote AF-P0A334-F1_centered.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit center AF-P0A334-F1.cif --atoms ca --geometric -o AF-P0A334-F1_ca_centroid0.pdb
+  [stderr] centre of geometry before: 6.4567 5.6805 -6.1875
+  [stderr] wrote AF-P0A334-F1_ca_centroid0.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit split AF-P0A334-F1.cif --atoms ca -d split_ca
+split_ca/AF-P0A334-F1_A_ca.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit split AF-P0A334-F1.cif --atoms backbone -f pdb -d split_backbone
+split_backbone/AF-P0A334-F1_A_backbone.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit extract AF-P0A334-F1.cif --residues 1:50 -o AF-P0A334-F1_first50.cif
+  [stderr] wrote AF-P0A334-F1_first50.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit convert AF-P0A334-F1.cif -o AF-P0A334-F1_converted.pdb
+  [stderr] wrote AF-P0A334-F1_converted.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit gaps AF-P0A334-F1.cif -o gaps.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit ligands AF-P0A334-F1.cif -o ligands.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit disulfide AF-P0A334-F1.cif -o disulfide.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit closecontacts AF-P0A334-F1.cif -o closecontacts.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit neighbors AF-P0A334-F1.cif -o neighbors.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit torsion AF-P0A334-F1.cif -o torsion.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit sasa AF-P0A334-F1.cif -o sasa.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit watercontacts AF-P0A334-F1.cif -o watercontacts.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit param AF-P0A334-F1.cif
+residues	160
+molecular_weight	17695.85
+pI	10.403
+fraction_titratable	0.2625
+fraction_acidic	0.0813
+fraction_basic	0.15
+charge_fully_ionised	11
+composition	{"ALA": 22, "ARG": 17, "ASN": 1, "ASP": 4, "GLN": 2, "GLU": 9, "GLY": 14, "HIS": 5, "ILE": 3, "LEU": 24, "LYS": 2, "MET": 4, "PHE": 4, "PRO": 5, "SER": 6, "THR": 12, "TRP": 5, "TYR": 5, "VAL": 16}
+non_standard_residues	[]
+  -> exit 0 in 0.5s
+
+$ pdbkit coulomb AF-P0A334-F1.cif
+coulomb_energy_kcal_mol	-3.3166
+  -> exit 0 in 0.5s
+
+$ pdbkit assembly AF-P0A334-F1.cif -o assembly.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit centerasu AF-P0A334-F1.cif -o x.cif
+  [stderr] pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise.
+  -> exit 2 in 0.6s
+
+$ pdbkit renumber AF-P0A334-F1.cif --shift 1000 -o AF-P0A334-F1_shift1000.cif
+  [stderr] wrote AF-P0A334-F1_shift1000.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit setfield AF-P0A334-F1.cif --occupancy 1 -o AF-P0A334-F1_occ1.pdb
+  [stderr] wrote AF-P0A334-F1_occ1.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit domains AF-P0A334-F1.cif -d domains
+domains/AF-P0A334-F1_domain_ss_info.csv
+  [stderr] AF-P0A334-F1.cif -> domains/AF-P0A334-F1_domain_ss_info.csv
+  -> exit 0 in 1.2s
+
+$ pdbkit hetnavi AF-P0A334-F1.cif -d hetnavi
+  [stderr] pdbkit: error: AF-P0A334-F1.cif has no 4-character PDB ID (entry ID 'AF-P0A334-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one.
+  -> exit 2 in 0.5s
+

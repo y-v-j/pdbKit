@@ -1,0 +1,32 @@
+{
+  "id": "3A2M",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "polymer_residues": 598,
+  "ligand_residues": 8,
+  "water_molecules": 450,
+  "atoms": 5200,
+  "hetatm_atoms": 521,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "CL": 2,
+    "GLC": 3,
+    "FRU": 3
+  },
+  "exp_title": "CRYSTAL STRUCTURE OF DBJA (WILD TYPE Type I)",
+  "exp_classification": "HYDROLASE",
+  "exp_organism": "Bradyrhizobium japonicum",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.84",
+  "exp_r_work": "0.154",
+  "exp_r_free": "0.187",
+  "input_format": "cif"
+}

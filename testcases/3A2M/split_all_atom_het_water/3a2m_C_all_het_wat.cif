@@ -1,0 +1,77 @@
+data_3A2M
+#
+_entry.id 3A2M
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 non-polymer GLC
+2 non-polymer FRU
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+B N N 2 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+FRU non-polymer
+GLC non-polymer
+#
+loop_
+_atom_type.symbol
+C
+O
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+HETATM 1 C C1 . GLC A 1 . ? -8.920 12.577 37.340 1.00 19.01 ? 1 GLC C C1 1
+HETATM 2 C C2 . GLC A 1 . ? -10.094 13.339 37.957 1.00 22.75 ? 1 GLC C C2 1
+HETATM 3 C C3 . GLC A 1 . ? -9.760 14.810 38.000 1.00 25.53 ? 1 GLC C C3 1
+HETATM 4 C C4 . GLC A 1 . ? -8.473 14.995 38.772 1.00 25.66 ? 1 GLC C C4 1
+HETATM 5 C C5 . GLC A 1 . ? -7.325 14.229 38.108 1.00 23.17 ? 1 GLC C C5 1
+HETATM 6 C C6 . GLC A 1 . ? -6.057 14.329 38.966 1.00 25.17 ? 1 GLC C C6 1
+HETATM 7 O O2 . GLC A 1 . ? -11.249 13.193 37.158 1.00 23.47 ? 1 GLC C O2 1
+HETATM 8 O O3 . GLC A 1 . ? -10.867 15.509 38.578 1.00 29.41 ? 1 GLC C O3 1
+HETATM 9 O O4 . GLC A 1 . ? -8.161 16.366 38.812 1.00 25.35 ? 1 GLC C O4 1
+HETATM 10 O O5 . GLC A 1 . ? -7.690 12.872 37.990 1.00 21.38 ? 1 GLC C O5 1
+HETATM 11 O O6 . GLC A 1 . ? -6.275 13.641 40.183 1.00 27.90 ? 1 GLC C O6 1
+HETATM 12 C C1 . FRU B 2 . ? -9.862 11.024 34.877 1.00 20.65 ? 2 FRU C C1 1
+HETATM 13 C C2 . FRU B 2 . ? -8.594 11.840 35.062 1.00 19.55 ? 2 FRU C C2 1
+HETATM 14 C C3 . FRU B 2 . ? -8.063 12.427 33.757 1.00 21.15 ? 2 FRU C C3 1
+HETATM 15 C C4 . FRU B 2 . ? -6.576 12.552 34.058 1.00 19.14 ? 2 FRU C C4 1
+HETATM 16 C C5 . FRU B 2 . ? -6.344 11.225 34.787 1.00 19.14 ? 2 FRU C C5 1
+HETATM 17 C C6 . FRU B 2 . ? -5.095 11.212 35.685 1.00 20.01 ? 2 FRU C C6 1
+HETATM 18 O O1 . FRU B 2 . ? -9.623 9.814 34.202 1.00 18.16 ? 2 FRU C O1 1
+HETATM 19 O O2 . FRU B 2 . ? -8.838 12.921 35.981 1.00 17.50 ? 2 FRU C O2 1
+HETATM 20 O O3 . FRU B 2 . ? -8.632 13.669 33.444 1.00 22.10 ? 2 FRU C O3 1
+HETATM 21 O O4 . FRU B 2 . ? -5.789 12.816 32.905 1.00 18.80 ? 2 FRU C O4 1
+HETATM 22 O O5 . FRU B 2 . ? -7.526 11.008 35.555 1.00 16.61 ? 2 FRU C O5 1
+HETATM 23 O O6 . FRU B 2 . ? -5.334 12.076 36.771 1.00 22.78 ? 2 FRU C O6 1
+#

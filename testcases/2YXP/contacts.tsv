@@ -1,0 +1,5 @@
+target	residue	min_distance
+X:MET:1	X:ILE:2	1.333
+X:MET:1	X:ASN:3	3.78
+X:MET:1	X:PRO:32	3.791
+X:MET:1	X:GLY:33	3.654

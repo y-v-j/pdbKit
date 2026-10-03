@@ -1,0 +1,27 @@
+{
+  "id": "1EHZ",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 76,
+  "ligand_residues": 9,
+  "water_molecules": 160,
+  "atoms": 1821,
+  "hetatm_atoms": 492,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "MG": 6,
+    "MN": 3
+  },
+  "exp_title": "The crystal structure of yeast phenylalanine tRNA at 1.93 A resolution",
+  "exp_classification": "RNA",
+  "exp_organism": "Saccharomyces cerevisiae",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.93",
+  "exp_r_work": "0.2334",
+  "exp_r_free": "0.253",
+  "input_format": "cif"
+}

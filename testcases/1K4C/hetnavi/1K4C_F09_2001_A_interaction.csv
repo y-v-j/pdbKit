@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,57,57,ARG,S,3,,F09,2001,A,1
+C,46,46,LEU,S,1,,F09,2001,A,1
+C,87,87,TRP,S,2,,F09,2001,A,1
+C,91,91,VAL,S,2,,F09,2001,A,1

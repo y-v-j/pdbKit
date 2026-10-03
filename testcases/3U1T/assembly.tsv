@@ -1,0 +1,4 @@
+id	details	oligomeric_details	oligomeric_count	chains	n_operators	in_asymmetric_unit	is_asymmetric_unit
+1	author_defined_assembly	monomeric	1	A	1	True	False
+2	author_defined_assembly	monomeric	1	B	1	True	False
+3	software_defined_assembly	tetrameric	4	A,B	2	False	False

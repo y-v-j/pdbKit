@@ -1,0 +1,3 @@
+id	details	oligomeric_details	oligomeric_count	chains	n_operators	in_asymmetric_unit	is_asymmetric_unit
+1	author_and_software_defined_assembly	hexameric	6	A,B,C,D,E,F	1	True	False
+2	author_and_software_defined_assembly	hexameric	6	G,H,I,J,K,L	1	True	False

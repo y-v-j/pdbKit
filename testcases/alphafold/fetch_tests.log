@@ -1,0 +1,75 @@
+# pdbkit fetch: AlphaFold DB download modes
+
+$ pdbkit fetch P69905 -d .
+./AF-P69905-F1.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch AF-P69905-F1 -f pdb -d .
+./AF-P69905-F1.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P69905 --pae -f pdb --overwrite -d with_pae
+with_pae/AF-P69905-F1.pdb
+  -> exit 0 in 0.8s
+
+$ pdbkit fetch AF-P69905-F1 -o hba_custom_name.cif
+hba_custom_name.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P69905 -f pdb -o -
+HEADER                                            01-AUG-25                     
+TITLE     ALPHAFOLD MONOMER V2.0 PREDICTION FOR HEMOGLOBIN SUBUNIT ALPHA        
+TITLE    2 (P69905)                                                             
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA;                                  
+COMPND   3 CHAIN: A                                                             
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_TAXID: 9606                                                 
+REMARK   1                                                                      
+REMARK   1 REFERENCE 1                                                          
+REMARK   1  AUTH   JOHN JUMPER, RICHARD EVANS, ALEXANDER PRITZEL, TIM GREEN,    
+REMARK   1  AUTH 2 MICHAEL FIGURNOV, OLAF RONNEBERGER, KATHRYN TUNYASUVUNAKOOL, 
+REMARK   1  AUTH 3 RUSS BATES, AUGUSTIN ZIDEK, ANNA POTAPENKO, ALEX BRIDGLAND,  
+REMARK   1  AUTH 4 CLEMENS MEYER, SIMON A A KOHL, ANDREW J BALLARD,             
+REMARK   1  AUTH 5 ANDREW COWIE, BERNARDINO ROMERA-PAREDES, STANISLAV NIKOLOV,  
+REMARK   1  AUTH 6 RISHUB JAIN, JONAS ADLER, TREVOR BACK, STIG PETERSEN,        
+REMARK   1  AUTH 7 DAVID REIMAN, ELLEN CLANCY, MICHAL ZIELINSKI,                
+REMARK   1  AUTH 8 MARTIN STEINEGGER, MICHALINA PACHOLSKA, TAMAS BERGHAMMER,    
+REMARK   1  AUTH 9 DAVID SILVER, ORIOL VINYALS, ANDREW W SENIOR,                
+REMARK   1  AUTH10 KORAY KAVUKCUOGLU, PUSHMEET KOHLI, DEMIS HASSABIS            
+REMARK   1  TITL   HIGHLY ACCURATE PROTEIN STRUCTURE PREDICTION WITH ALPHAFOLD  
+REMARK   1  REF    NATURE                        V. 596   583 2021              
+REMARK   1  REFN                   ISSN 0028-0836                               
+REMARK   1  PMID   34265844                                                     
+... (1112 more lines in stdout_download.pdb)
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P02185 P00918 -f pdb -d several
+several/AF-P02185-F1.pdb
+several/AF-P00918-F1.pdb
+  -> exit 0 in 0.8s
+
+$ pdbkit fetch p69905 --source alphafold -d lower
+lower/AF-P69905-F1.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch AF-P69905-F2 -d .
+  [stderr] pdbkit: error: AlphaFold DB has no cif file for AF-P69905-F2. AlphaFold DB does not cover viral proteins, and proteins longer than 2,700 residues are available only as fragments in bulk proteome downloads; also check the accession.
+  -> exit 2 in 3.3s
+
+$ pdbkit fetch Q8WZ42 -d .
+  [stderr] pdbkit: error: AlphaFold DB has no model for Q8WZ42. AlphaFold DB does not cover viral proteins, and proteins longer than 2,700 residues are available only as fragments in bulk proteome downloads; also check the accession.
+  -> exit 2 in 0.7s
+
+$ pdbkit fetch P00720 -d .
+  [stderr] pdbkit: error: AlphaFold DB has no model for P00720. AlphaFold DB does not cover viral proteins, and proteins longer than 2,700 residues are available only as fragments in bulk proteome downloads; also check the accession.
+  -> exit 2 in 0.7s
+
+$ pdbkit fetch P69905 --assembly 1 -d .
+  [stderr] pdbkit: error: AlphaFold models have no biological assemblies.
+  -> exit 2 in 0.4s
+
+$ pdbkit info AF-P69905-F1 --table json -o info_by_id.json
+  -> exit 0 in 0.7s
+

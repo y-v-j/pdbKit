@@ -1,0 +1,27 @@
+{
+  "id": "4F4L",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "polymer_residues": 359,
+  "ligand_residues": 0,
+  "water_molecules": 42,
+  "atoms": 2759,
+  "hetatm_atoms": 42,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {},
+  "exp_title": "Open Channel Conformation of a Voltage Gated Sodium Channel",
+  "exp_classification": "METAL TRANSPORT",
+  "exp_organism": "Magnetococcus marinus",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "3.49",
+  "exp_r_work": "0.2707",
+  "exp_r_free": "0.2852",
+  "input_format": "cif"
+}

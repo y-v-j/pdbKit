@@ -1,0 +1,9 @@
+heteroatom,protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+CL:2004:A,A,38,38,ASN,S,2,,CL,2004,A,4
+CL:2004:A,A,109,109,TRP,S,2,,CL,2004,A,4
+CL:2004:A,A,169,169,PHE,S,2,,CL,2004,A,4
+CL:2004:A,A,207,207,TRP,A,2,,CL,2004,A,4
+CL:2004:A,A,208,208,PRO,A,4,,CL,2004,A,4
+CL:2004:A,A,211,211,ILE,S,1,,CL,2004,A,4
+CL:2005:A,A,217,217,PRO,B,2,,CL,2005,A,5
+CL:2005:A,A,218,218,ALA,A,2,,CL,2005,A,5

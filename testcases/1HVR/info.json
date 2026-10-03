@@ -1,0 +1,27 @@
+{
+  "id": "1HVR",
+  "models": 1,
+  "chains": [
+    "A",
+    "B"
+  ],
+  "polymer_residues": 198,
+  "ligand_residues": 1,
+  "water_molecules": 0,
+  "atoms": 1890,
+  "hetatm_atoms": 64,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "XK2": 1
+  },
+  "exp_title": "RATIONAL DESIGN OF POTENT, BIOAVAILABLE, NONPEPTIDE CYCLIC UREAS AS HIV PROTEASE INHIBITORS",
+  "exp_classification": "HYDROLASE/HYDROLASE INHIBITOR",
+  "exp_organism": "Human immunodeficiency virus 1",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.8",
+  "exp_r_work": "0.1930000",
+  "exp_r_free": "NA",
+  "input_format": "cif"
+}

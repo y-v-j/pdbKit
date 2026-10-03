@@ -1,0 +1,8 @@
+heteroatom,protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+BME:902:A,A,93,93,ALA,A,9,,BME,902,A,4
+BME:902:A,A,97,97,ALA,S,1,,BME,902,A,4
+BME:902:A,A,100,100,ILE,S,1,,BME,902,A,4
+CL:173:A,A,142,142,THR,A,4,,CL,173,A,1
+CL:173:A,A,143,143,PRO,B,1,,CL,173,A,1
+CL:173:A,A,144,144,ASN,A,3,,CL,173,A,1
+CL:173:A,A,145,145,ARG,B,1,,CL,173,A,1

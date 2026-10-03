@@ -1,0 +1,30 @@
+{
+  "id": "2CB8",
+  "models": 1,
+  "chains": [
+    "A",
+    "B"
+  ],
+  "polymer_residues": 171,
+  "ligand_residues": 14,
+  "water_molecules": 289,
+  "atoms": 1918,
+  "hetatm_atoms": 443,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "MYA": 4,
+    "ZN": 8,
+    "SO4": 1,
+    "MXE": 1
+  },
+  "exp_title": "High resolution crystal structure of liganded human L-ACBP",
+  "exp_classification": "TRANSPORT",
+  "exp_organism": "HOMO SAPIENS",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.40",
+  "exp_r_work": "0.171",
+  "exp_r_free": "0.194",
+  "input_format": "cif"
+}

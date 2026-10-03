@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,18,18,GLU,S,3,,K,103,A,3
+A,66,66,ARG,S,1,,K,103,A,3
+A,68,68,VAL,S,1,,K,103,A,3
+A,69,69,ARG,A,2,,K,103,A,3

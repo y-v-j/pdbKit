@@ -1,0 +1,9 @@
+chain	resname	resseq	icode	atoms
+A	CL	401		1
+B	CL	402		1
+C	GLC	1		11
+C	FRU	2		12
+D	GLC	1		11
+D	FRU	2		12
+E	GLC	1		11
+E	FRU	2		12

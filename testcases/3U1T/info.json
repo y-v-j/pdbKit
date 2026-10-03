@@ -1,0 +1,28 @@
+{
+  "id": "3U1T",
+  "models": 1,
+  "chains": [
+    "A",
+    "B"
+  ],
+  "polymer_residues": 597,
+  "ligand_residues": 6,
+  "water_molecules": 497,
+  "atoms": 5164,
+  "hetatm_atoms": 691,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "CL": 4,
+    "MLI": 2
+  },
+  "exp_title": "Haloalkane Dehalogenase, DmmA, of marine microbial origin",
+  "exp_classification": "HYDROLASE",
+  "exp_organism": "unidentified",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "2.20",
+  "exp_r_work": "0.13882",
+  "exp_r_free": "0.17728",
+  "input_format": "cif"
+}

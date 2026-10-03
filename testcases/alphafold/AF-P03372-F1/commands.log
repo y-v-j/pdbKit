@@ -1,0 +1,130 @@
+# pdbKit AlphaFold case study: AF-P03372-F1 - estrogen receptor alpha, human (3ERT)
+
+$ pdbkit fetch P03372 --pae -d .
+./AF-P03372-F1.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit fetch P03372 -f pdb -d .
+./AF-P03372-F1.pdb
+  -> exit 0 in 0.6s
+
+$ pdbkit info AF-P03372-F1.cif --table json -o info.json
+  -> exit 0 in 0.6s
+
+$ pdbkit validate AF-P03372-F1.cif
+OK: cif file, 1 model(s), 4637 atoms
+  -> exit 0 in 0.8s
+
+$ pdbkit exper AF-P03372-F1.cif
+id	AF-P03372-F1
+title	NA
+classification	NA
+organism	NA
+method	NA
+resolution	NA
+r_work	NA
+r_free	NA
+  -> exit 0 in 0.7s
+
+$ pdbkit fasta AF-P03372-F1.cif -d .
+./AF-P03372-F1.fasta
+  -> exit 0 in 0.6s
+
+$ pdbkit com AF-P03372-F1.cif
+x	-2.1304
+y	-4.3301
+z	4.0663
+weighting	mass
+radius_of_gyration	38.0802
+  -> exit 0 in 0.7s
+
+$ pdbkit center AF-P03372-F1.cif -o AF-P03372-F1_centered.cif
+  [stderr] centre of mass before: -2.1304 -4.3301 4.0663
+  [stderr] wrote AF-P03372-F1_centered.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit center AF-P03372-F1.cif --atoms ca --geometric -o AF-P03372-F1_ca_centroid0.pdb
+  [stderr] centre of geometry before: -1.6686 -4.2499 3.5835
+  [stderr] wrote AF-P03372-F1_ca_centroid0.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit split AF-P03372-F1.cif --atoms ca -d split_ca
+split_ca/AF-P03372-F1_A_ca.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit split AF-P03372-F1.cif --atoms backbone -f pdb -d split_backbone
+split_backbone/AF-P03372-F1_A_backbone.pdb
+  -> exit 0 in 0.8s
+
+$ pdbkit extract AF-P03372-F1.cif --residues 1:50 -o AF-P03372-F1_first50.cif
+  [stderr] wrote AF-P03372-F1_first50.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit convert AF-P03372-F1.cif -o AF-P03372-F1_converted.pdb
+  [stderr] wrote AF-P03372-F1_converted.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit gaps AF-P03372-F1.cif -o gaps.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit ligands AF-P03372-F1.cif -o ligands.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit disulfide AF-P03372-F1.cif -o disulfide.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit closecontacts AF-P03372-F1.cif -o closecontacts.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit neighbors AF-P03372-F1.cif -o neighbors.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit torsion AF-P03372-F1.cif -o torsion.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit sasa AF-P03372-F1.cif -o sasa.tsv
+  -> exit 0 in 1.9s
+
+$ pdbkit watercontacts AF-P03372-F1.cif -o watercontacts.tsv
+  -> exit 0 in 1.1s
+
+$ pdbkit param AF-P03372-F1.cif
+residues	595
+molecular_weight	66224.36
+pI	8.083
+fraction_titratable	0.3059
+fraction_acidic	0.1008
+fraction_basic	0.1445
+charge_fully_ionised	26
+composition	{"ALA": 47, "ARG": 35, "ASN": 25, "ASP": 24, "CYS": 13, "GLN": 25, "GLU": 36, "GLY": 47, "HIS": 22, "ILE": 19, "LEU": 73, "LYS": 29, "MET": 27, "PHE": 15, "PRO": 35, "SER": 45, "THR": 25, "TRP": 5, "TYR": 23, "VAL": 25}
+non_standard_residues	[]
+  -> exit 0 in 0.6s
+
+$ pdbkit coulomb AF-P03372-F1.cif
+coulomb_energy_kcal_mol	-23.3805
+  -> exit 0 in 0.7s
+
+$ pdbkit assembly AF-P03372-F1.cif -o assembly.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit centerasu AF-P03372-F1.cif -o x.cif
+  [stderr] pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise.
+  -> exit 2 in 0.6s
+
+$ pdbkit renumber AF-P03372-F1.cif --shift 1000 -o AF-P03372-F1_shift1000.cif
+  [stderr] wrote AF-P03372-F1_shift1000.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit setfield AF-P03372-F1.cif --occupancy 1 -o AF-P03372-F1_occ1.pdb
+  [stderr] wrote AF-P03372-F1_occ1.pdb
+  -> exit 0 in 0.8s
+
+$ pdbkit domains AF-P03372-F1.cif -d domains
+domains/AF-P03372-F1_domain_ss_info.csv
+  [stderr] AF-P03372-F1.cif -> domains/AF-P03372-F1_domain_ss_info.csv
+  -> exit 0 in 1.7s
+
+$ pdbkit hetnavi AF-P03372-F1.cif -d hetnavi
+  [stderr] pdbkit: error: AF-P03372-F1.cif has no 4-character PDB ID (entry ID 'AF-P03372-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one.
+  -> exit 2 in 0.7s
+

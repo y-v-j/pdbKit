@@ -1,0 +1,12 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,38,38,ASN,B,1,,D2P,1297,A,1
+A,108,108,ASP,S,2,,D2P,1297,A,1
+A,143,143,PHE,S,1,,D2P,1297,A,1
+A,144,144,PRO,S,1,,D2P,1297,A,1
+A,151,151,PHE,S,2,,D2P,1297,A,1
+A,169,169,PHE,S,2,,D2P,1297,A,1
+A,177,177,LEU,S,1,,D2P,1297,A,1
+A,247,247,ALA,S,1,,D2P,1297,A,1
+A,248,248,LEU,A,2,,D2P,1297,A,1
+A,272,272,HIS,S,8,,D2P,1297,A,1
+A,273,273,PHE,S,1,,D2P,1297,A,1

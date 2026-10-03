@@ -1,0 +1,70 @@
+data_1EHZ
+#
+_entry.id 1EHZ
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 non-polymer MG
+2 non-polymer MN
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+B N N 2 ?
+C N N 1 ?
+D N N 2 ?
+E N N 1 ?
+F N N 1 ?
+G N N 1 ?
+H N N 1 ?
+I N N 2 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+MG non-polymer
+MN non-polymer
+#
+loop_
+_atom_type.symbol
+MG
+MN
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+HETATM 1 MG MG . MG A 1 . ? 70.566 35.530 1.665 1.00 65.44 ? 590 MG A MG 1
+HETATM 2 MN MN . MN B 2 . ? 80.714 57.068 31.271 1.00 34.23 ? 530 MN A MN 1
+HETATM 3 MG MG . MG C 1 . ? 57.346 47.575 47.279 1.00 62.77 ? 510 MG A MG 1
+HETATM 4 MN MN . MN D 2 . ? 49.923 44.427 50.131 1.00 89.20 ? 520 MN A MN 1
+HETATM 5 MG MG . MG E 1 . ? 77.110 64.307 25.357 1.00 40.08 ? 540 MG A MG 1
+HETATM 6 MG MG . MG F 1 . ? 62.649 46.629 27.595 1.00 47.02 ? 560 MG A MG 1
+HETATM 7 MG MG . MG G 1 . ? 73.331 43.321 11.207 1.00 50.39 ? 570 MG A MG 1
+HETATM 8 MG MG . MG H 1 . ? 69.222 44.815 33.339 1.00 61.74 ? 580 MG A MG 1
+HETATM 9 MN MN . MN I 2 . ? 72.301 48.513 33.894 1.00 56.51 ? 550 MN A MN 1
+#

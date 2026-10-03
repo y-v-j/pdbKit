@@ -1,0 +1,17 @@
+heteroatom,protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+MG:510:A,A,3,3,G,S,1,,MG,510,A,3
+MG:540:A,A,20,20,G,S,2,,MG,540,A,5
+MG:540:A,A,21,21,A,S,2,,MG,540,A,5
+MG:560:A,A,8,8,U,S,1,,MG,560,A,6
+MG:560:A,A,12,12,U,S,1,,MG,560,A,6
+MG:580:A,A,7,7,U,S,2,,MG,580,A,8
+MG:580:A,A,8,8,U,S,1,,MG,580,A,8
+MG:580:A,A,13,13,C,S,2,,MG,580,A,8
+MG:580:A,A,14,14,A,S,3,,MG,580,A,8
+MG:590:A,A,37,37,YYG,S,5,,MG,590,A,1
+MG:590:A,A,38,38,A,S,4,,MG,590,A,1
+MN:520:A,A,1,1,G,S,5,,MN,520,A,4
+MN:530:A,A,16,16,H2U,S,3,,MN,530,A,2
+MN:530:A,A,19,19,G,S,3,,MN,530,A,2
+MN:530:A,A,20,20,G,S,1,,MN,530,A,2
+MN:550:A,A,15,15,G,S,5,,MN,550,A,9

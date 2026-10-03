@@ -1,0 +1,209 @@
+# pdbKit case study: 4F4X  (input: /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif)
+# every command below was run in /var/home/kestrel/Projects/potential_projects/github-new/pdbKit/testcases/4F4X
+
+$ pdbkit info /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --table json -o info.json
+  -> exit 0 in 0.7s
+
+$ pdbkit validate /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif
+OK: cif file, 1 model(s), 3607 atoms
+  -> exit 0 in 0.9s
+
+$ pdbkit exper /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif
+id	4F4X
+title	Y-family DNA polymerase chimera Dbh-Dpo4-Dpo4 #2
+classification	TRANSFERASE/DNA
+organism	Sulfolobus acidocaldarius
+method	X-RAY DIFFRACTION
+resolution	2.049
+r_work	0.2181
+r_free	0.2503
+  -> exit 0 in 0.7s
+
+$ pdbkit assembly /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o assembly.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -d .
+./4f4x.fasta
+  -> exit 0 in 0.7s
+
+$ pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --source atom -o 4F4X_modelled.fasta
+4F4X_modelled.fasta
+  -> exit 0 in 0.7s
+
+$ pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif
+x	28.1718
+y	-18.3378
+z	-9.7501
+weighting	mass
+radius_of_gyration	22.8288
+  -> exit 0 in 0.7s
+
+$ pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -c A --atoms ca --geometric
+x	27.8147
+y	-14.8783
+z	-12.2062
+weighting	geometric
+radius_of_gyration	22.0677
+  -> exit 0 in 0.8s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o 4F4X_centered.cif
+  [stderr] centre of mass before: 28.1718 -18.3378 -9.7501
+  [stderr] wrote 4F4X_centered.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -c A --keep-all -o 4F4X_chainA_com0.cif
+  [stderr] centre of mass before: 27.3044 -15.8275 -11.8809
+  [stderr] wrote 4F4X_chainA_com0.cif
+  -> exit 0 in 0.9s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -c A --het none --no-water -o 4F4X_chainA_protein_centered.cif
+  [stderr] centre of mass before: 27.1419 -16.0753 -11.8255
+  [stderr] wrote 4F4X_chainA_protein_centered.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --atoms ca -d split_ca
+split_ca/4f4x_A_ca.cif
+  [stderr] pdbKit: chain 'P' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'T' has no atoms matching the selection - skipped
+  -> exit 0 in 0.8s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --atoms ca --het all -d split_ca_het
+split_ca_het/4f4x_A_ca_het.cif
+split_ca_het/4f4x_P_ca_het.cif
+  [stderr] pdbKit: chain 'T' has no atoms matching the selection - skipped
+  -> exit 0 in 0.9s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --het all --water -d split_all_atom_het_water
+split_all_atom_het_water/4f4x_A_all_het_wat.cif
+split_all_atom_het_water/4f4x_P_all_het_wat.cif
+split_all_atom_het_water/4f4x_T_all_het_wat.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -c A,P --het CA -d split_selected
+split_selected/4f4x_A_all_het-CA.cif
+split_selected/4f4x_P_all_het-CA.cif
+  -> exit 0 in 0.9s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -c A,P --atoms ca --het CA -f pdb -d split_selected
+split_selected/4f4x_A_ca_het-CA.pdb
+split_selected/4f4x_P_ca_het-CA.pdb
+  -> exit 0 in 0.8s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --atoms ca -f pdb -d split_ca_pdb
+split_ca_pdb/4f4x_A_ca.pdb
+  [stderr] pdbKit: chain 'P' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'T' has no atoms matching the selection - skipped
+  -> exit 0 in 0.8s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --atoms backbone --het none --no-water -o 4F4X_backbone.cif
+  [stderr] wrote 4F4X_backbone.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --hetatm-only -o 4F4X_hetatm_only.cif
+  [stderr] wrote 4F4X_hetatm_only.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --altloc best --no-hydrogens -o 4F4X_single_conformer.cif
+  [stderr] wrote 4F4X_single_conformer.cif
+  -> exit 0 in 0.9s
+
+$ pdbkit convert /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o 4F4X.pdb
+  [stderr] wrote 4F4X.pdb
+  -> exit 0 in 0.8s
+
+$ pdbkit convert 4F4X.pdb -o 4F4X_roundtrip.cif
+  [stderr] wrote 4F4X_roundtrip.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit gaps /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o gaps.tsv
+  -> exit 0 in 0.8s
+
+$ pdbkit ligands /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o ligands.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit disulfide /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o disulfide.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit closecontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --ca-only -o closecontacts.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit watercontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o watercontacts.tsv
+  -> exit 0 in 1.2s
+
+$ pdbkit neighbors /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o neighbors.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit torsion /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o torsion.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit iondist /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --step 0.5 -o iondist.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit sasa /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o sasa.tsv
+  -> exit 0 in 1.9s
+
+$ pdbkit contacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -t CA --cutoff 4.0 -o contacts.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit distances /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -r A:1:CA --atom CA -c A -o distances.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit param /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif
+residues	342
+molecular_weight	38887.13
+pI	9.726
+fraction_titratable	0.3538
+fraction_acidic	0.1316
+fraction_basic	0.1784
+charge_fully_ionised	16
+composition	{"ALA": 25, "ARG": 23, "ASN": 17, "ASP": 15, "CYS": 1, "GLN": 8, "GLU": 30, "GLY": 18, "HIS": 3, "ILE": 37, "LEU": 29, "LYS": 35, "MET": 6, "PHE": 11, "PRO": 14, "SER": 16, "THR": 13, "TYR": 14, "VAL": 27}
+non_standard_residues	[]
+  -> exit 0 in 0.7s
+
+$ pdbkit coulomb /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif
+coulomb_energy_kcal_mol	-19.632
+  -> exit 0 in 0.8s
+
+$ pdbkit centerasu /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o 4F4X_asu_in_cell.cif
+  [stderr] fractional shift: 0 1 1
+  [stderr] wrote 4F4X_asu_in_cell.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit renumber /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --start 1 -o 4F4X_renumbered.cif
+  [stderr] wrote 4F4X_renumbered.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit rename /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --chain-map A:z -o 4F4X_chainA_as_z.cif
+  [stderr] wrote 4F4X_chainA_as_z.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit setfield /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif --bfactor 0 --occupancy 1 -o 4F4X_b0_occ1.cif
+  [stderr] wrote 4F4X_b0_occ1.cif
+  -> exit 0 in 0.9s
+
+$ pdbkit sort /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -o 4F4X_sorted.cif
+  [stderr] wrote 4F4X_sorted.cif
+  -> exit 0 in 0.8s
+
+$ pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -d domains
+domains/4F4X_domain_ss_info.csv
+  [stderr] /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -> domains/4F4X_domain_ss_info.csv
+  -> exit 0 in 11.8s
+
+$ pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -q -d domains_offline
+domains_offline/4F4X_domain_ss_info.csv
+  [stderr] /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/4f4x.cif -> domains_offline/4F4X_domain_ss_info.csv
+  -> exit 0 in 0.7s
+
+$ pdbkit hetnavi 4F4X -d hetnavi --save-raw
+Parsed 3 chain record(s).
+hetnavi/4F4X_CA_401_A_interaction.csv
+hetnavi/4F4X_CA_402_A_interaction.csv
+hetnavi/4F4X_CA_403_A_interaction.csv
+hetnavi/4F4X_DCP_404_A_interaction.csv
+hetnavi/4F4X_all_het_interactions.csv
+hetnavi/4F4X_subunit_interactions.csv
+hetnavi/4F4X_disorder.csv
+hetnavi/4F4X_assembly1.dat
+  -> exit 0 in 1.7s
+

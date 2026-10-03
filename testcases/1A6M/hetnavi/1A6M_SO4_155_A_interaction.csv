@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,57,57,ALA,B,1,0,SO4,155,A,1
+A,58,58,SER,A,7,2,SO4,155,A,1
+A,59,59,GLU,A,6,0,SO4,155,A,1
+A,60,60,ASP,A,3,1,SO4,155,A,1

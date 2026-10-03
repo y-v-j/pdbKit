@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+B,26,26,ALA,S,3,,GLC,1,D,3
+B,28,28,ASP,S,10,,GLC,1,D,3
+B,29,29,ALA,S,1,,GLC,1,D,3
+B,54,54,PRO,B,2,,GLC,1,D,3

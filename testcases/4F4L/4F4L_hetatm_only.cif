@@ -1,0 +1,95 @@
+data_4F4L
+#
+_entry.id 4F4L
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 water water
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+B N N 1 ?
+C N N 1 ?
+D N N 1 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+HOH non-polymer
+#
+loop_
+_atom_type.symbol
+O
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+HETATM 1 O O . HOH A 1 . ? 4.423 9.568 -3.032 1.00 74.56 ? 201 HOH A O 1
+HETATM 2 O O . HOH A 1 . ? -6.064 13.740 -16.171 1.00 46.83 ? 202 HOH A O 1
+HETATM 3 O O . HOH A 1 . ? -8.471 14.660 -17.775 1.00 77.77 ? 203 HOH A O 1
+HETATM 4 O O . HOH A 1 . ? 12.115 -2.667 -7.550 1.00 96.19 ? 204 HOH A O 1
+HETATM 5 O O . HOH A 1 . ? 10.398 3.678 -17.128 1.00 78.49 ? 205 HOH A O 1
+HETATM 6 O O . HOH A 1 . ? 2.814 13.062 -14.238 1.00 51.39 ? 206 HOH A O 1
+HETATM 7 O O . HOH B 1 . ? 0.328 17.976 1.235 1.00 34.40 ? 201 HOH B O 1
+HETATM 8 O O . HOH B 1 . ? -20.170 26.723 -1.695 1.00 37.77 ? 202 HOH B O 1
+HETATM 9 O O . HOH B 1 . ? -3.573 17.269 0.308 1.00 64.11 ? 203 HOH B O 1
+HETATM 10 O O . HOH B 1 . ? -1.828 14.280 -0.674 1.00 88.85 ? 204 HOH B O 1
+HETATM 11 O O . HOH B 1 . ? -13.013 20.739 -46.246 1.00 125.49 ? 205 HOH B O 1
+HETATM 12 O O . HOH B 1 . ? -9.307 21.229 -22.116 1.00 58.92 ? 206 HOH B O 1
+HETATM 13 O O . HOH B 1 . ? -19.222 35.834 0.261 1.00 83.43 ? 207 HOH B O 1
+HETATM 14 O O . HOH B 1 . ? -16.182 32.777 -36.881 1.00 101.53 ? 208 HOH B O 1
+HETATM 15 O O . HOH B 1 . ? -16.424 35.730 -2.563 1.00 95.48 ? 209 HOH B O 1
+HETATM 16 O O . HOH B 1 . ? -9.859 48.723 -9.781 1.00 85.00 ? 210 HOH B O 1
+HETATM 17 O O . HOH B 1 . ? 2.270 15.360 -2.181 1.00 78.69 ? 211 HOH B O 1
+HETATM 18 O O . HOH B 1 . ? -1.484 21.300 0.793 1.00 87.39 ? 212 HOH B O 1
+HETATM 19 O O . HOH B 1 . ? 4.985 17.332 2.709 1.00 54.53 ? 213 HOH B O 1
+HETATM 20 O O . HOH B 1 . ? -17.425 20.984 -18.083 1.00 45.84 ? 214 HOH B O 1
+HETATM 21 O O . HOH B 1 . ? -1.616 16.949 -3.510 1.00 87.70 ? 215 HOH B O 1
+HETATM 22 O O . HOH B 1 . ? -2.807 20.294 -3.796 1.00 84.31 ? 216 HOH B O 1
+HETATM 23 O O . HOH B 1 . ? -14.571 35.818 -5.658 1.00 73.60 ? 217 HOH B O 1
+HETATM 24 O O . HOH C 1 . ? -5.783 15.794 -9.901 1.00 34.03 ? 201 HOH C O 1
+HETATM 25 O O . HOH C 1 . ? -9.440 17.252 -14.903 1.00 54.38 ? 202 HOH C O 1
+HETATM 26 O O . HOH C 1 . ? -23.152 25.872 -6.348 1.00 20.38 ? 203 HOH C O 1
+HETATM 27 O O . HOH C 1 . ? -22.628 0.590 -0.725 1.00 58.84 ? 204 HOH C O 1
+HETATM 28 O O . HOH C 1 . ? -13.365 0.757 4.555 1.00 112.91 ? 205 HOH C O 1
+HETATM 29 O O . HOH C 1 . ? -14.526 -1.152 -3.808 1.00 104.29 ? 206 HOH C O 1
+HETATM 30 O O . HOH C 1 . ? -29.142 24.855 -32.174 1.00 91.47 ? 207 HOH C O 1
+HETATM 31 O O . HOH C 1 . ? -29.661 29.549 -29.283 1.00 106.80 ? 208 HOH C O 1
+HETATM 32 O O . HOH C 1 . ? -31.908 24.882 -18.104 1.00 100.96 ? 209 HOH C O 1
+HETATM 33 O O . HOH C 1 . ? -6.096 16.209 -12.774 1.00 50.55 ? 210 HOH C O 1
+HETATM 34 O O . HOH C 1 . ? -15.695 17.836 -18.747 1.00 46.54 ? 211 HOH C O 1
+HETATM 35 O O . HOH C 1 . ? -22.355 25.803 -3.997 1.00 30.24 ? 212 HOH C O 1
+HETATM 36 O O . HOH C 1 . ? -25.684 17.170 7.927 1.00 83.64 ? 213 HOH C O 1
+HETATM 37 O O . HOH C 1 . ? -15.374 0.123 7.189 1.00 86.51 ? 214 HOH C O 1
+HETATM 38 O O . HOH D 1 . ? -17.831 13.700 -35.745 1.00 144.48 ? 201 HOH D O 1
+HETATM 39 O O . HOH D 1 . ? -6.218 22.571 -24.324 1.00 53.70 ? 202 HOH D O 1
+HETATM 40 O O . HOH D 1 . ? -0.880 14.031 -26.066 1.00 58.46 ? 203 HOH D O 1
+HETATM 41 O O . HOH D 1 . ? -6.413 17.504 -15.919 1.00 69.14 ? 204 HOH D O 1
+HETATM 42 O O . HOH D 1 . ? -2.009 17.322 -24.745 1.00 92.32 ? 205 HOH D O 1
+#

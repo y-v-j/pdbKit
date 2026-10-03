@@ -1,0 +1,13 @@
+heteroatom,protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+ZN:201:A,A,7,107,CYS,S,2,,ZN,201,A,1
+ZN:201:A,A,12,112,CYS,S,2,,ZN,201,A,1
+ZN:201:A,A,25,125,HIS,S,3,,ZN,201,A,1
+ZN:201:A,A,29,129,HIS,S,4,,ZN,201,A,1
+ZN:202:A,A,37,137,CYS,S,2,,ZN,202,A,2
+ZN:202:A,A,40,140,CYS,A,4,,ZN,202,A,2
+ZN:202:A,A,53,153,HIS,S,3,,ZN,202,A,2
+ZN:202:A,A,57,157,HIS,S,3,,ZN,202,A,2
+ZN:203:A,A,65,165,CYS,S,2,,ZN,203,A,3
+ZN:203:A,A,68,168,CYS,A,4,,ZN,203,A,3
+ZN:203:A,A,81,181,HIS,S,3,,ZN,203,A,3
+ZN:203:A,A,85,185,HIS,S,3,,ZN,203,A,3

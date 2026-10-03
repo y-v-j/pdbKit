@@ -1,0 +1,120 @@
+{
+  "commands": [
+    {
+      "label": "accession -> mmCIF",
+      "cmd": "pdbkit fetch P69905 -d .",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.66,
+      "stderr": ""
+    },
+    {
+      "label": "AF-ID -> PDB",
+      "cmd": "pdbkit fetch AF-P69905-F1 -f pdb -d .",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.69,
+      "stderr": ""
+    },
+    {
+      "label": "with PAE",
+      "cmd": "pdbkit fetch P69905 --pae -f pdb --overwrite -d with_pae",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.84,
+      "stderr": ""
+    },
+    {
+      "label": "-o file name",
+      "cmd": "pdbkit fetch AF-P69905-F1 -o hba_custom_name.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.7,
+      "stderr": ""
+    },
+    {
+      "label": "-o - (stdout)",
+      "cmd": "pdbkit fetch P69905 -f pdb -o -",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.73,
+      "stderr": ""
+    },
+    {
+      "label": "several IDs",
+      "cmd": "pdbkit fetch P02185 P00918 -f pdb -d several",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.83,
+      "stderr": ""
+    },
+    {
+      "label": "lower-case + --source",
+      "cmd": "pdbkit fetch p69905 --source alphafold -d lower",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.66,
+      "stderr": ""
+    },
+    {
+      "label": "missing fragment -> error",
+      "cmd": "pdbkit fetch AF-P69905-F2 -d .",
+      "rc": 2,
+      "expected": 2,
+      "ok": true,
+      "seconds": 3.27,
+      "stderr": "pdbkit: error: AlphaFold DB has no cif file for AF-P69905-F2. AlphaFold DB does not cover viral proteins, and proteins longer than 2,700 residues are available only as fragments in bulk proteome downloads; also check the accession."
+    },
+    {
+      "label": "titin (no single model) -> error",
+      "cmd": "pdbkit fetch Q8WZ42 -d .",
+      "rc": 2,
+      "expected": 2,
+      "ok": true,
+      "seconds": 0.68,
+      "stderr": "pdbkit: error: AlphaFold DB has no model for Q8WZ42. AlphaFold DB does not cover viral proteins, and proteins longer than 2,700 residues are available only as fragments in bulk proteome downloads; also check the accession."
+    },
+    {
+      "label": "T4 lysozyme (viral, not in AFDB) -> error",
+      "cmd": "pdbkit fetch P00720 -d .",
+      "rc": 2,
+      "expected": 2,
+      "ok": true,
+      "seconds": 0.67,
+      "stderr": "pdbkit: error: AlphaFold DB has no model for P00720. AlphaFold DB does not cover viral proteins, and proteins longer than 2,700 residues are available only as fragments in bulk proteome downloads; also check the accession."
+    },
+    {
+      "label": "assembly for AF -> error",
+      "cmd": "pdbkit fetch P69905 --assembly 1 -d .",
+      "rc": 2,
+      "expected": 2,
+      "ok": true,
+      "seconds": 0.45,
+      "stderr": "pdbkit: error: AlphaFold models have no biological assemblies."
+    },
+    {
+      "label": "load by AF-ID (cache)",
+      "cmd": "pdbkit info AF-P69905-F1 --table json -o info_by_id.json",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.7,
+      "stderr": ""
+    }
+  ],
+  "checks": {
+    "cif_and_pdb_same_atoms": true,
+    "stdout_download_is_valid_pdb": true,
+    "pae_matrix_is_L_by_L": true,
+    "custom_name_written": true,
+    "several_ids": true,
+    "commands_exit_as_expected": true
+  }
+}

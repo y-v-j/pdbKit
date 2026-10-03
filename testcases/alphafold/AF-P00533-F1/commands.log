@@ -1,0 +1,130 @@
+# pdbKit AlphaFold case study: AF-P00533-F1 - EGFR, human (1M17)
+
+$ pdbkit fetch P00533 --pae -d .
+./AF-P00533-F1.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P00533 -f pdb -d .
+./AF-P00533-F1.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit info AF-P00533-F1.cif --table json -o info.json
+  -> exit 0 in 0.9s
+
+$ pdbkit validate AF-P00533-F1.cif
+OK: cif file, 1 model(s), 9392 atoms
+  -> exit 0 in 1.2s
+
+$ pdbkit exper AF-P00533-F1.cif
+id	AF-P00533-F1
+title	NA
+classification	NA
+organism	NA
+method	NA
+resolution	NA
+r_work	NA
+r_free	NA
+  -> exit 0 in 0.9s
+
+$ pdbkit fasta AF-P00533-F1.cif -d .
+./AF-P00533-F1.fasta
+  -> exit 0 in 0.9s
+
+$ pdbkit com AF-P00533-F1.cif
+x	-6.7514
+y	6.6987
+z	3.4504
+weighting	mass
+radius_of_gyration	40.0615
+  -> exit 0 in 0.9s
+
+$ pdbkit center AF-P00533-F1.cif -o AF-P00533-F1_centered.cif
+  [stderr] centre of mass before: -6.7514 6.6987 3.4504
+  [stderr] wrote AF-P00533-F1_centered.cif
+  -> exit 0 in 1.2s
+
+$ pdbkit center AF-P00533-F1.cif --atoms ca --geometric -o AF-P00533-F1_ca_centroid0.pdb
+  [stderr] centre of geometry before: -6.9168 6.5546 3.1271
+  [stderr] wrote AF-P00533-F1_ca_centroid0.pdb
+  -> exit 0 in 1.1s
+
+$ pdbkit split AF-P00533-F1.cif --atoms ca -d split_ca
+split_ca/AF-P00533-F1_A_ca.cif
+  -> exit 0 in 1.2s
+
+$ pdbkit split AF-P00533-F1.cif --atoms backbone -f pdb -d split_backbone
+split_backbone/AF-P00533-F1_A_backbone.pdb
+  -> exit 0 in 1.2s
+
+$ pdbkit extract AF-P00533-F1.cif --residues 1:50 -o AF-P00533-F1_first50.cif
+  [stderr] wrote AF-P00533-F1_first50.cif
+  -> exit 0 in 1.0s
+
+$ pdbkit convert AF-P00533-F1.cif -o AF-P00533-F1_converted.pdb
+  [stderr] wrote AF-P00533-F1_converted.pdb
+  -> exit 0 in 0.9s
+
+$ pdbkit gaps AF-P00533-F1.cif -o gaps.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit ligands AF-P00533-F1.cif -o ligands.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit disulfide AF-P00533-F1.cif -o disulfide.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit closecontacts AF-P00533-F1.cif -o closecontacts.tsv
+  -> exit 0 in 1.1s
+
+$ pdbkit neighbors AF-P00533-F1.cif -o neighbors.tsv
+  -> exit 0 in 1.0s
+
+$ pdbkit torsion AF-P00533-F1.cif -o torsion.tsv
+  -> exit 0 in 1.2s
+
+$ pdbkit sasa AF-P00533-F1.cif -o sasa.tsv
+  -> exit 0 in 3.7s
+
+$ pdbkit watercontacts AF-P00533-F1.cif -o watercontacts.tsv
+  -> exit 0 in 2.1s
+
+$ pdbkit param AF-P00533-F1.cif
+residues	1210
+molecular_weight	134294.32
+pI	6.675
+fraction_titratable	0.3231
+fraction_acidic	0.114
+fraction_basic	0.1298
+charge_fully_ionised	19
+composition	{"ALA": 72, "ARG": 60, "ASN": 66, "ASP": 61, "CYS": 60, "GLN": 49, "GLU": 77, "GLY": 85, "HIS": 31, "ILE": 69, "LEU": 111, "LYS": 66, "MET": 25, "PHE": 36, "PRO": 75, "SER": 84, "THR": 64, "TRP": 13, "TYR": 36, "VAL": 70}
+non_standard_residues	[]
+  -> exit 0 in 0.9s
+
+$ pdbkit coulomb AF-P00533-F1.cif
+coulomb_energy_kcal_mol	-80.2706
+  -> exit 0 in 0.9s
+
+$ pdbkit assembly AF-P00533-F1.cif -o assembly.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit centerasu AF-P00533-F1.cif -o x.cif
+  [stderr] pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise.
+  -> exit 2 in 0.9s
+
+$ pdbkit renumber AF-P00533-F1.cif --shift 1000 -o AF-P00533-F1_shift1000.cif
+  [stderr] wrote AF-P00533-F1_shift1000.cif
+  -> exit 0 in 1.1s
+
+$ pdbkit setfield AF-P00533-F1.cif --occupancy 1 -o AF-P00533-F1_occ1.pdb
+  [stderr] wrote AF-P00533-F1_occ1.pdb
+  -> exit 0 in 1.2s
+
+$ pdbkit domains AF-P00533-F1.cif -d domains
+domains/AF-P00533-F1_domain_ss_info.csv
+  [stderr] AF-P00533-F1.cif -> domains/AF-P00533-F1_domain_ss_info.csv
+  -> exit 0 in 2.3s
+
+$ pdbkit hetnavi AF-P00533-F1.cif -d hetnavi
+  [stderr] pdbkit: error: AF-P00533-F1.cif has no 4-character PDB ID (entry ID 'AF-P00533-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one.
+  -> exit 2 in 0.9s
+

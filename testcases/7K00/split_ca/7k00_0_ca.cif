@@ -1,0 +1,124 @@
+data_7K00
+#
+_entry.id 7K00
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 polymer '50S ribosomal protein L33'
+#
+loop_
+_entity_poly.entity_id
+_entity_poly.type
+_entity_poly.nstd_linkage
+_entity_poly.pdbx_strand_id
+1 polypeptide(L) no 0
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+ALA 'L-peptide linking'
+ARG 'L-peptide linking'
+ASN 'L-peptide linking'
+ASP 'L-peptide linking'
+GLN 'L-peptide linking'
+GLU 'L-peptide linking'
+GLY 'peptide linking'
+HIS 'L-peptide linking'
+ILE 'L-peptide linking'
+LEU 'L-peptide linking'
+LYS 'L-peptide linking'
+PHE 'L-peptide linking'
+PRO 'L-peptide linking'
+SER 'L-peptide linking'
+THR 'L-peptide linking'
+TYR 'L-peptide linking'
+VAL 'L-peptide linking'
+#
+loop_
+_atom_type.symbol
+C
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+ATOM 1 C CA . GLY A 1 4 ? 214.071 171.142 136.044 1.00 26.08 ? 4 GLY 0 CA 1
+ATOM 2 C CA . ILE A 1 5 ? 214.973 174.722 135.126 1.00 25.95 ? 5 ILE 0 CA 1
+ATOM 3 C CA . ARG A 1 6 ? 217.181 172.966 132.546 1.00 20.63 ? 6 ARG 0 CA 1
+ATOM 4 C CA . GLU A 1 7 ? 215.340 172.872 129.252 1.00 22.00 ? 7 GLU 0 CA 1
+ATOM 5 C CA . LYS A 1 8 ? 215.208 170.651 126.176 1.00 17.93 ? 8 LYS 0 CA 1
+ATOM 6 C CA . ILE A 1 9 ? 216.531 171.771 122.797 1.00 17.89 ? 9 ILE 0 CA 1
+ATOM 7 C CA . LYS A 1 10 ? 217.162 170.215 119.418 1.00 18.66 ? 10 LYS 0 CA 1
+ATOM 8 C CA . LEU A 1 11 ? 220.412 170.296 117.485 1.00 17.72 ? 11 LEU 0 CA 1
+ATOM 9 C CA . VAL A 1 12 ? 219.694 170.535 113.774 1.00 17.52 ? 12 VAL 0 CA 1
+ATOM 10 C CA . SER A 1 13 ? 222.074 169.273 111.104 1.00 19.08 ? 13 SER 0 CA 1
+ATOM 11 C CA . SER A 1 14 ? 223.975 171.764 108.971 1.00 20.87 ? 14 SER 0 CA 1
+ATOM 12 C CA . ALA A 1 15 ? 223.459 169.306 106.087 1.00 20.75 ? 15 ALA 0 CA 1
+ATOM 13 C CA . GLY A 1 16 ? 219.821 170.297 105.405 1.00 22.41 ? 16 GLY 0 CA 1
+ATOM 14 C CA . THR A 1 17 ? 218.718 166.683 105.968 1.00 19.59 ? 17 THR 0 CA 1
+ATOM 15 C CA . GLY A 1 18 ? 216.296 167.566 108.741 1.00 18.88 ? 18 GLY 0 CA 1
+ATOM 16 C CA . HIS A 1 19 ? 218.033 165.111 111.099 1.00 16.25 ? 19 HIS 0 CA 1
+ATOM 17 C CA . PHE A 1 20 ? 218.187 166.478 114.621 1.00 13.95 ? 20 PHE 0 CA 1
+ATOM 18 C CA . TYR A 1 21 ? 219.566 165.458 117.971 1.00 14.38 ? 21 TYR 0 CA 1
+ATOM 19 C CA . THR A 1 22 ? 217.891 166.531 121.195 1.00 13.81 ? 22 THR 0 CA 1
+ATOM 20 C CA . THR A 1 23 ? 219.633 167.462 124.437 1.00 15.75 ? 23 THR 0 CA 1
+ATOM 21 C CA . THR A 1 24 ? 219.183 169.742 127.426 1.00 17.81 ? 24 THR 0 CA 1
+ATOM 22 C CA . LYS A 1 25 ? 220.658 173.124 128.254 1.00 22.16 ? 25 LYS 0 CA 1
+ATOM 23 C CA . ASN A 1 26 ? 220.610 175.687 131.063 1.00 26.36 ? 26 ASN 0 CA 1
+ATOM 24 C CA . LYS A 1 27 ? 219.575 178.865 129.276 1.00 29.19 ? 27 LYS 0 CA 1
+ATOM 25 C CA . ARG A 1 28 ? 220.462 181.322 132.036 1.00 32.12 ? 28 ARG 0 CA 1
+ATOM 26 C CA . THR A 1 29 ? 223.948 180.029 132.874 1.00 31.08 ? 29 THR 0 CA 1
+ATOM 27 C CA . LYS A 1 30 ? 224.504 179.419 129.123 1.00 29.23 ? 30 LYS 0 CA 1
+ATOM 28 C CA . PRO A 1 31 ? 222.803 182.008 126.874 1.00 30.46 ? 31 PRO 0 CA 1
+ATOM 29 C CA . GLU A 1 32 ? 224.956 181.346 123.774 1.00 31.10 ? 32 GLU 0 CA 1
+ATOM 30 C CA . LYS A 1 33 ? 223.950 178.775 121.151 1.00 27.78 ? 33 LYS 0 CA 1
+ATOM 31 C CA . LEU A 1 34 ? 225.408 175.269 121.501 1.00 23.07 ? 34 LEU 0 CA 1
+ATOM 32 C CA . GLU A 1 35 ? 227.013 174.024 118.263 1.00 23.87 ? 35 GLU 0 CA 1
+ATOM 33 C CA . LEU A 1 36 ? 228.806 170.667 117.984 1.00 18.76 ? 36 LEU 0 CA 1
+ATOM 34 C CA . LYS A 1 37 ? 229.979 168.406 115.172 1.00 17.93 ? 37 LYS 0 CA 1
+ATOM 35 C CA . LYS A 1 38 ? 227.844 165.245 115.216 1.00 16.60 ? 38 LYS 0 CA 1
+ATOM 36 C CA . PHE A 1 39 ? 227.361 162.319 112.861 1.00 15.23 ? 39 PHE 0 CA 1
+ATOM 37 C CA . ASP A 1 40 ? 224.437 162.858 110.454 1.00 17.11 ? 40 ASP 0 CA 1
+ATOM 38 C CA . PRO A 1 41 ? 223.228 159.386 109.360 1.00 16.71 ? 41 PRO 0 CA 1
+ATOM 39 C CA . VAL A 1 42 ? 221.352 160.668 106.321 1.00 17.70 ? 42 VAL 0 CA 1
+ATOM 40 C CA . VAL A 1 43 ? 224.445 162.083 104.594 1.00 18.12 ? 43 VAL 0 CA 1
+ATOM 41 C CA . ARG A 1 44 ? 226.536 159.654 106.707 1.00 16.98 ? 44 ARG 0 CA 1
+ATOM 42 C CA . GLN A 1 45 ? 229.149 162.245 107.711 1.00 17.72 ? 45 GLN 0 CA 1
+ATOM 43 C CA . HIS A 1 46 ? 230.150 164.335 110.715 1.00 15.68 ? 46 HIS 0 CA 1
+ATOM 44 C CA . VAL A 1 47 ? 228.758 167.863 110.329 1.00 16.90 ? 47 VAL 0 CA 1
+ATOM 45 C CA . ILE A 1 48 ? 228.115 170.889 112.489 1.00 18.37 ? 48 ILE 0 CA 1
+ATOM 46 C CA . TYR A 1 49 ? 224.815 170.826 114.379 1.00 17.59 ? 49 TYR 0 CA 1
+ATOM 47 C CA . LYS A 1 50 ? 223.359 174.059 115.738 1.00 20.46 ? 50 LYS 0 CA 1
+ATOM 48 C CA . GLU A 1 51 ? 220.834 174.500 118.548 1.00 22.82 ? 51 GLU 0 CA 1
+ATOM 49 C CA . ALA A 1 52 ? 217.161 175.269 117.821 1.00 22.35 ? 52 ALA 0 CA 1
+ATOM 50 C CA . LYS A 1 53 ? 213.940 175.368 119.829 1.00 22.98 ? 53 LYS 0 CA 1
+ATOM 51 C CA . ILE A 1 54 ? 212.259 172.041 120.579 1.00 21.00 ? 54 ILE 0 CA 1
+#

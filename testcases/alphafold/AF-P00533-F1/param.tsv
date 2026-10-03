@@ -1,0 +1,9 @@
+residues	1210
+molecular_weight	134294.32
+pI	6.675
+fraction_titratable	0.3231
+fraction_acidic	0.114
+fraction_basic	0.1298
+charge_fully_ionised	19
+composition	{"ALA": 72, "ARG": 60, "ASN": 66, "ASP": 61, "CYS": 60, "GLN": 49, "GLU": 77, "GLY": 85, "HIS": 31, "ILE": 69, "LEU": 111, "LYS": 66, "MET": 25, "PHE": 36, "PRO": 75, "SER": 84, "THR": 64, "TRP": 13, "TYR": 36, "VAL": 70}
+non_standard_residues	[]

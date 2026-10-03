@@ -1,0 +1,150 @@
+data_4MMK
+#
+_entry.id 4MMK
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 polymer 'Protein hfq'
+2 non-polymer ZN
+3 non-polymer NA
+#
+loop_
+_entity_poly.entity_id
+_entity_poly.type
+_entity_poly.nstd_linkage
+_entity_poly.pdbx_strand_id
+1 polypeptide(L) no G
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+B N N 2 ?
+C N N 3 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+ALA 'L-peptide linking'
+ARG 'L-peptide linking'
+ASN 'L-peptide linking'
+ASP 'L-peptide linking'
+GLN 'L-peptide linking'
+GLU 'L-peptide linking'
+GLY 'peptide linking'
+HIS 'L-peptide linking'
+ILE 'L-peptide linking'
+LEU 'L-peptide linking'
+LYS 'L-peptide linking'
+MET 'L-peptide linking'
+NA non-polymer
+PHE 'L-peptide linking'
+PRO 'L-peptide linking'
+SER 'L-peptide linking'
+THR 'L-peptide linking'
+TYR 'L-peptide linking'
+VAL 'L-peptide linking'
+ZN non-polymer
+#
+loop_
+_atom_type.symbol
+C
+NA
+ZN
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+ATOM 1 C CA . GLY A 1 4 ? -0.123 65.809 51.539 1.00 30.83 ? 4 GLY G CA 1
+ATOM 2 C CA . HIS A 1 5 ? 3.319 64.442 52.405 1.00 38.72 ? 5 HIS G CA 1
+ATOM 3 C CA . SER A 1 6 ? 2.329 65.243 55.978 1.00 35.68 ? 6 SER G CA 1
+ATOM 4 C CA . LEU A 1 7 ? 2.542 61.753 57.449 1.00 34.79 ? 7 LEU G CA 1
+ATOM 5 C CA . ALA A 1 8 ? 4.698 60.314 54.647 1.00 35.21 ? 8 ALA G CA 1
+ATOM 6 C CA . ASP A 1 9 ? 7.835 62.458 55.149 1.00 31.87 ? 9 ASP G CA 1
+ATOM 7 C CA . PRO A 1 10 ? 8.172 62.434 58.948 1.00 31.19 ? 10 PRO G CA 1
+ATOM 8 C CA . TYR A 1 11 ? 7.637 58.659 58.926 1.00 24.66 ? 11 TYR G CA 1
+ATOM 9 C CA . LEU A 1 12 ? 10.005 57.833 56.098 1.00 29.44 ? 12 LEU G CA 1
+ATOM 10 C CA . ASN A 1 13 ? 12.517 60.487 57.224 1.00 33.21 ? 13 ASN G CA 1
+ATOM 11 C CA . THR A 1 14 ? 12.420 58.925 60.682 1.00 31.68 ? 14 THR G CA 1
+ATOM 12 C CA . LEU A 1 15 ? 12.965 55.456 59.235 1.00 29.17 ? 15 LEU G CA 1
+ATOM 13 C CA . ARG A 1 16 ? 15.856 56.780 57.211 1.00 26.56 ? 16 ARG G CA 1
+ATOM 14 C CA . LYS A 1 17 ? 17.564 58.617 60.082 1.00 30.77 ? 17 LYS G CA 1
+ATOM 15 C CA . GLU A 1 18 ? 17.157 55.954 62.775 1.00 28.93 ? 18 GLU G CA 1
+ATOM 16 C CA . ARG A 1 19 ? 18.475 53.522 60.158 1.00 29.22 ? 19 ARG G CA 1
+ATOM 17 C CA . VAL A 1 20 ? 15.582 51.206 60.917 1.00 28.86 ? 20 VAL G CA 1
+ATOM 18 C CA . PRO A 1 21 ? 15.694 47.945 58.968 1.00 23.25 ? 21 PRO G CA 1
+ATOM 19 C CA . VAL A 1 22 ? 12.633 47.993 56.763 1.00 26.33 ? 22 VAL G CA 1
+ATOM 20 C CA . SER A 1 23 ? 10.505 45.493 54.889 1.00 25.08 ? 23 SER G CA 1
+ATOM 21 C CA . ILE A 1 24 ? 8.896 46.879 51.708 1.00 24.62 ? 24 ILE G CA 1
+ATOM 22 C CA . TYR A 1 25 ? 6.170 44.958 49.868 1.00 24.62 ? 25 TYR G CA 1
+ATOM 23 C CA . LEU A 1 26 ? 5.308 45.950 46.283 1.00 23.74 ? 26 LEU G CA 1
+ATOM 24 C CA . VAL A 1 27 ? 2.002 45.899 44.328 1.00 28.39 ? 27 VAL G CA 1
+ATOM 25 C CA . ASN A 1 28 ? 2.981 42.515 42.904 1.00 27.98 ? 28 ASN G CA 1
+ATOM 26 C CA . GLY A 1 29 ? 3.935 41.087 46.241 1.00 31.87 ? 29 GLY G CA 1
+ATOM 27 C CA . ILE A 1 30 ? 7.704 41.249 46.188 1.00 27.58 ? 30 ILE G CA 1
+ATOM 28 C CA . LYS A 1 31 ? 9.305 41.857 49.595 1.00 27.34 ? 31 LYS G CA 1
+ATOM 29 C CA . LEU A 1 32 ? 12.443 43.975 49.722 1.00 28.12 ? 32 LEU G CA 1
+ATOM 30 C CA . GLN A 1 33 ? 14.534 44.324 52.880 1.00 25.94 ? 33 GLN G CA 1
+ATOM 31 C CA . GLY A 1 34 ? 17.207 46.880 53.673 1.00 26.77 ? 34 GLY G CA 1
+ATOM 32 C CA . GLN A 1 35 ? 17.200 50.425 54.957 1.00 26.50 ? 35 GLN G CA 1
+ATOM 33 C CA . ILE A 1 36 ? 15.833 53.621 53.460 1.00 23.44 ? 36 ILE G CA 1
+ATOM 34 C CA . GLU A 1 37 ? 18.985 55.562 52.558 1.00 25.19 ? 37 GLU G CA 1
+ATOM 35 C CA . SER A 1 38 ? 17.024 58.537 51.229 1.00 25.55 ? 38 SER G CA 1
+ATOM 36 C CA . PHE A 1 39 ? 13.959 59.384 49.140 1.00 21.12 ? 39 PHE G CA 1
+ATOM 37 C CA . ASP A 1 40 ? 11.946 61.956 47.257 1.00 25.23 ? 40 ASP G CA 1
+ATOM 38 C CA . GLN A 1 41 ? 8.367 62.649 46.160 1.00 23.48 ? 41 GLN G CA 1
+ATOM 39 C CA . PHE A 1 42 ? 8.474 59.689 43.769 1.00 22.92 ? 42 PHE G CA 1
+ATOM 40 C CA . VAL A 1 43 ? 11.269 57.361 44.854 1.00 21.54 ? 43 VAL G CA 1
+ATOM 41 C CA . ILE A 1 44 ? 12.903 55.416 47.718 1.00 23.91 ? 44 ILE G CA 1
+ATOM 42 C CA . LEU A 1 45 ? 16.543 54.237 47.528 1.00 27.04 ? 45 LEU G CA 1
+ATOM 43 C CA . LEU A 1 46 ? 17.116 50.872 49.278 1.00 25.18 ? 46 LEU G CA 1
+ATOM 44 C CA . LYS A 1 47 ? 20.593 50.205 50.784 1.00 32.99 ? 47 LYS G CA 1
+ATOM 45 C CA . ASN A 1 48 ? 21.369 46.598 51.729 1.00 39.67 ? 48 ASN G CA 1
+ATOM 46 C CA . THR A 1 49 ? 23.058 43.546 50.255 1.00 42.66 ? 49 THR G CA 1
+ATOM 47 C CA . VAL A 1 50 ? 21.992 45.149 47.019 1.00 36.67 ? 50 VAL G CA 1
+ATOM 48 C CA . SER A 1 51 ? 21.267 48.859 46.776 1.00 30.56 ? 51 SER G CA 1
+ATOM 49 C CA . GLN A 1 52 ? 18.323 49.698 44.539 1.00 27.85 ? 52 GLN G CA 1
+ATOM 50 C CA . MET A 1 53 ? 15.934 52.478 43.437 1.00 25.58 ? 53 MET G CA 1
+ATOM 51 C CA . VAL A 1 54 ? 12.311 51.748 44.345 1.00 25.10 ? 54 VAL G CA 1
+ATOM 52 C CA . TYR A 1 55 ? 9.396 53.676 42.817 1.00 21.22 ? 55 TYR G CA 1
+ATOM 53 C CA . LYS A 1 56 ? 6.637 54.571 45.272 1.00 21.46 ? 56 LYS G CA 1
+ATOM 54 C CA . HIS A 1 57 ? 3.787 53.861 42.837 1.00 21.25 ? 57 HIS G CA 1
+ATOM 55 C CA . ALA A 1 58 ? 4.881 50.218 42.938 1.00 19.82 ? 58 ALA G CA 1
+ATOM 56 C CA . ILE A 1 59 ? 4.992 49.818 46.704 1.00 21.58 ? 59 ILE G CA 1
+ATOM 57 C CA . SER A 1 60 ? 1.968 48.695 48.692 1.00 21.83 ? 60 SER G CA 1
+ATOM 58 C CA . THR A 1 61 ? 3.262 48.543 52.307 1.00 20.04 ? 61 THR G CA 1
+ATOM 59 C CA . VAL A 1 62 ? 6.269 49.729 54.345 1.00 24.89 ? 62 VAL G CA 1
+ATOM 60 C CA . VAL A 1 63 ? 6.837 47.526 57.411 1.00 24.85 ? 63 VAL G CA 1
+ATOM 61 C CA . PRO A 1 64 ? 9.596 48.384 59.959 1.00 26.70 ? 64 PRO G CA 1
+ATOM 62 C CA . SER A 1 65 ? 11.157 45.560 61.989 1.00 25.21 ? 65 SER G CA 1
+ATOM 63 C CA . ARG A 1 66 ? 10.640 47.439 65.305 1.00 24.82 ? 66 ARG G CA 1
+ATOM 64 C CA . PRO A 1 67 ? 8.175 50.269 66.218 1.00 27.81 ? 67 PRO G CA 1
+ATOM 65 C CA . VAL A 1 68 ? 8.722 53.927 65.195 1.00 29.66 ? 68 VAL G CA 1
+ATOM 66 C CA . ARG A 1 69 ? 8.040 57.324 66.832 1.00 36.75 ? 69 ARG G CA 1
+HETATM 67 ZN ZN . ZN B 2 . ? 5.309 56.962 39.589 1.00 34.50 ? 101 ZN G ZN 1
+HETATM 68 NA NA . NA C 3 . ? 11.822 56.251 66.940 1.00 30.88 ? 102 NA G NA 1
+#

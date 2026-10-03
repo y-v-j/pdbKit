@@ -1,0 +1,4 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,29,28,ILE,S,1,0,XE,211,A,11
+A,112,111,ILE,S,1,0,XE,211,A,11
+A,116,115,LEU,S,2,0,XE,211,A,11

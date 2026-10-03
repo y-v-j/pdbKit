@@ -1,0 +1,3 @@
+model	chain	from	to	type	distance
+1	K	K:IAS:119	K:GLY:120	distance	4.92
+1	4	4:GLN:48	4:GLY:55	distance	18.95

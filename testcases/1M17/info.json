@@ -1,0 +1,26 @@
+{
+  "id": "1M17",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 312,
+  "ligand_residues": 1,
+  "water_molecules": 20,
+  "atoms": 2560,
+  "hetatm_atoms": 49,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": true,
+  "ligands": {
+    "AQ4": 1
+  },
+  "exp_title": "Epidermal Growth Factor Receptor tyrosine kinase domain with 4-anilinoquinazoline inhibitor erlotinib",
+  "exp_classification": "TRANSFERASE",
+  "exp_organism": "Homo sapiens",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "2.60",
+  "exp_r_work": "0.251",
+  "exp_r_free": "0.295",
+  "input_format": "cif"
+}

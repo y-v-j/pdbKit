@@ -1,0 +1,30 @@
+{
+  "id": "1K4C",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C"
+  ],
+  "polymer_residues": 534,
+  "ligand_residues": 9,
+  "water_molecules": 469,
+  "atoms": 4534,
+  "hetatm_atoms": 517,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "F09": 1,
+    "K": 7,
+    "DGA": 1
+  },
+  "exp_title": "Potassium Channel KcsA-Fab complex in high concentration of K+",
+  "exp_classification": "MEMBRANE PROTEIN",
+  "exp_organism": "Streptomyces lividans",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "2.00",
+  "exp_r_work": "0.218",
+  "exp_r_free": "0.233",
+  "input_format": "cif"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "3ERT",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 247,
+  "ligand_residues": 1,
+  "water_molecules": 79,
+  "atoms": 2070,
+  "hetatm_atoms": 108,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "OHT": 1
+  },
+  "exp_title": "HUMAN ESTROGEN RECEPTOR ALPHA LIGAND-BINDING DOMAIN IN COMPLEX WITH 4-HYDROXYTAMOXIFEN",
+  "exp_classification": "NUCLEAR RECEPTOR",
+  "exp_organism": "Homo sapiens",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.90",
+  "exp_r_work": "0.2290000",
+  "exp_r_free": "0.2620000",
+  "input_format": "cif"
+}

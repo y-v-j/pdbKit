@@ -1,0 +1,24 @@
+{
+  "id": "2YXP",
+  "models": 1,
+  "chains": [
+    "X"
+  ],
+  "polymer_residues": 310,
+  "ligand_residues": 0,
+  "water_molecules": 399,
+  "atoms": 2878,
+  "hetatm_atoms": 399,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {},
+  "exp_title": "The Effect of Deuteration on Protein Structure A High Resolution Comparison of Hydrogenous and Perdeuterated Haloalkane Dehalogenase",
+  "exp_classification": "HYDROLASE",
+  "exp_organism": "Xanthobacter autotrophicus",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.53",
+  "exp_r_work": "0.15823",
+  "exp_r_free": "0.18477",
+  "input_format": "cif"
+}

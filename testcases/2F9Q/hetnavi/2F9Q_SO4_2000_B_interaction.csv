@@ -1,0 +1,3 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+B,107,129,ARG,S,9,2,SO4,2000,B,2
+B,111,133,ARG,S,5,2,SO4,2000,B,2

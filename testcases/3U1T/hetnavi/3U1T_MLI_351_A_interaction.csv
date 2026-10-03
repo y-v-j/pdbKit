@@ -1,0 +1,8 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,147,187,LEU,S,1,,MLI,351,A,3
+A,174,214,ILE,S,1,,MLI,351,A,3
+A,178,218,MSE,A,7,,MLI,351,A,3
+A,179,219,GLY,B,2,,MLI,351,A,3
+A,248,288,ALA,S,1,,MLI,351,A,3
+A,274,314,THR,S,2,,MLI,351,A,3
+A,275,315,HIS,S,9,,MLI,351,A,3

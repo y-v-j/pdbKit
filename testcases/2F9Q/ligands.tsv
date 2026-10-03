@@ -1,0 +1,7 @@
+chain	resname	resseq	icode	atoms
+A	HEM	600		43
+B	SO4	2000		5
+B	SO4	2001		5
+B	HEM	600		43
+C	HEM	600		43
+D	HEM	600		43

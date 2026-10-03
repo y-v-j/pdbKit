@@ -1,0 +1,11 @@
+pdbKit incorporates code and algorithms from:
+
+* pdb-tools 2.0.0-rc1 (HADDOCK / Bonvin lab, Joao Rodrigues et al.)
+  https://github.com/haddocking/pdb-tools - Apache License 2.0
+* pdbtools (Harms lab, Michael J. Harms) https://github.com/harmslab/pdbtools
+  GNU General Public License v3
+* hetpdbnavi_parser.py and mmcif_domain_family.py (project scripts)
+
+Because GPL-3.0 code is included, pdbKit as a whole is distributed under the
+GNU GPL v3 or later (see LICENSE). Apache-2.0 code may be combined into a
+GPL-3.0 work. The original sources and licences are kept in upstream/.

@@ -1,0 +1,29 @@
+{
+  "id": "1BRS",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "polymer_residues": 588,
+  "ligand_residues": 0,
+  "water_molecules": 513,
+  "atoms": 5153,
+  "hetatm_atoms": 513,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": true,
+  "ligands": {},
+  "exp_title": "PROTEIN-PROTEIN RECOGNITION: CRYSTAL STRUCTURAL ANALYSIS OF A BARNASE-BARSTAR COMPLEX AT 2.0-A RESOLUTION",
+  "exp_classification": "ENDONUCLEASE",
+  "exp_organism": "Bacillus amyloliquefaciens",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "2.0",
+  "exp_r_work": "0.1720000",
+  "exp_r_free": "NA",
+  "input_format": "cif"
+}

@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,46,45,ARG,S,9,0,SO4,205,A,5
+A,64,63,LYS,S,3,0,SO4,205,A,5
+A,65,64,HIS,A,8,2,SO4,205,A,5
+A,68,67,THR,S,8,2,SO4,205,A,5

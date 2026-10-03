@@ -1,0 +1,5 @@
+model	chain	from	to	type	distance
+1	A	A:PRO:41	A:GLN:52	distance	16.13
+1	B	B:PRO:39	B:ASN:53	distance	18.79
+1	C	C:PRO:41	C:GLN:52	distance	17.06
+1	D	D:PRO:39	D:ASN:53	distance	18.66

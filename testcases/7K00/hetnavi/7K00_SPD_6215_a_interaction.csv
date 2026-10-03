@@ -1,0 +1,9 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+a,200,200,U,S,1,0,SPD,6215,a,311
+a,247,247,G,S,3,0,SPD,6215,a,311
+a,248,248,G,S,5,0,SPD,6215,a,311
+a,249,249,C,S,6,0,SPD,6215,a,311
+a,386,386,G,S,10,2,SPD,6215,a,311
+a,387,387,U,S,4,2,SPD,6215,a,311
+a,2395,2395,C,S,3,0,SPD,6215,a,311
+w,22,22,LEU,S,1,0,SPD,6215,a,311

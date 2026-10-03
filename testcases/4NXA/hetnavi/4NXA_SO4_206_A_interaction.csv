@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,120,119,HIS,A,4,0,SO4,206,A,6
+A,121,120,PRO,A,5,0,SO4,206,A,6
+A,122,121,GLY,B,10,1,SO4,206,A,6
+A,123,122,ASP,A,9,2,SO4,206,A,6

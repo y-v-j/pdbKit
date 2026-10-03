@@ -1,0 +1,4 @@
+target	residue	min_distance
+A:VAL:3	A:ILE:4	1.298
+A:VAL:3	A:ASN:5	3.613
+A:VAL:3	C:ASP:8	3.689

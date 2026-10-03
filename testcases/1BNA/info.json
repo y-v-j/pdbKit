@@ -1,0 +1,25 @@
+{
+  "id": "1BNA",
+  "models": 1,
+  "chains": [
+    "A",
+    "B"
+  ],
+  "polymer_residues": 24,
+  "ligand_residues": 0,
+  "water_molecules": 80,
+  "atoms": 566,
+  "hetatm_atoms": 80,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {},
+  "exp_title": "STRUCTURE OF A B-DNA DODECAMER. CONFORMATION AND DYNAMICS",
+  "exp_classification": "DNA",
+  "exp_organism": "NA",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.900",
+  "exp_r_work": "0.1780000",
+  "exp_r_free": "NA",
+  "input_format": "cif"
+}

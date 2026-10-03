@@ -1,0 +1,4 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,109,108,SER,S,1,0,XE,208,A,8
+A,139,138,PHE,S,1,0,XE,208,A,8
+A,140,139,ARG,S,1,0,XE,208,A,8

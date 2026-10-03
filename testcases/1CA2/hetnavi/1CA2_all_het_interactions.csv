@@ -1,0 +1,5 @@
+heteroatom,protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+ZN:262:A,A,93,94,HIS,S,3,,ZN,262,A,1
+ZN:262:A,A,95,96,HIS,S,3,,ZN,262,A,1
+ZN:262:A,A,118,119,HIS,S,5,,ZN,262,A,1
+ZN:262:A,A,197,199,THR,S,1,,ZN,262,A,1

@@ -1,0 +1,249 @@
+ID	1HVRA	STANDARD;	PRT;	99	AA.
+DT	CONVERTED FROM PDB (SEQRES) 1HVR
+DE	HIV-1 PROTEASE
+OS	Human immunodeficiency virus 1
+CC	EXPDTA	X-RAY DIFFRACTION
+CC	RESOLU	1.800
+CC	R-Factor	0.193
+FT	#SUB	1	   1 	PRO	A	97	  97 	LEU	B	Protein	B	1
+FT	#SUB	1	   1 	PRO	A	98	  98 	ASN	B	Protein	B	2
+FT	#SUB	1	   1 	PRO	A	99	  99 	PHE	B	Protein	A	10
+FT	#SUB	2	   2 	GLN	A	96	  96 	THR	B	Protein	S	2
+FT	#SUB	2	   2 	GLN	A	97	  97 	LEU	B	Protein	B	2
+FT	#SUB	2	   2 	GLN	A	98	  98 	ASN	B	Protein	A	5
+FT	#SUB	3	   3 	VAL	A	96	  96 	THR	B	Protein	B	4
+FT	#SUB	3	   3 	VAL	A	97	  97 	LEU	B	Protein	A	12
+FT	#SUB	4	   4 	THR	A	96	  96 	THR	B	Protein	A	2
+FT	#SUB	5	   5 	LEU	A	87	  87 	ARG	B	Protein	A	5
+FT	#SUB	5	   5 	LEU	A	91	  91 	THR	B	Protein	B	2
+FT	#SUB	5	   5 	LEU	A	95	  95 	ALA	B	Protein	S	2
+FT	#SUB	6	   6 	TRP	A	87	  87 	ARG	B	Protein	B	2
+FT	#SUB	6	   6 	TRP	A	91	  91 	THR	B	Protein	A	6
+FT	#SUB	7	   7 	GLN	A	87	  87 	ARG	B	Protein	B	8
+FT	#SUB	8	   8 	ARG	A	29	  29 	ASP	B	Protein	S	7
+FT	#SUB	8	   8 	ARG	A	87	  87 	ARG	B	Protein	A	4
+FT	#SUB	9	   9 	PRO	A	26	  26 	THR	B	Protein	S	2
+FT	#SUB	9	   9 	PRO	A	87	  87 	ARG	B	Protein	S	1
+FT	#SUB	9	   9 	PRO	A	97	  97 	LEU	B	Protein	S	1
+FT	#SUB	23	  23 	LEU	A	27	  27 	GLY	B	Protein	S	2
+FT	#SUB	24	  24 	LEU	A	26	  26 	THR	B	Protein	B	4
+FT	#SUB	24	  24 	LEU	A	99	  99 	PHE	B	Protein	S	1
+FT	#SUB	25	  25 	ASP	A	25	  25 	ASP	B	Protein	S	2
+FT	#SUB	25	  25 	ASP	A	26	  26 	THR	B	Protein	B	3
+FT	#SUB	25	  25 	ASP	A	27	  27 	GLY	B	Protein	S	4
+FT	#SUB	26	  26 	THR	A	9	   9 	PRO	B	Protein	B	2
+FT	#SUB	26	  26 	THR	A	24	  24 	LEU	B	Protein	A	4
+FT	#SUB	26	  26 	THR	A	25	  25 	ASP	B	Protein	S	3
+FT	#SUB	26	  26 	THR	A	26	  26 	THR	B	Protein	A	9
+FT	#SUB	27	  27 	GLY	A	23	  23 	LEU	B	Protein	B	2
+FT	#SUB	27	  27 	GLY	A	24	  24 	LEU	B	Protein	B	1
+FT	#SUB	27	  27 	GLY	A	25	  25 	ASP	B	Protein	B	3
+FT	#SUB	29	  29 	ASP	A	8	   8 	ARG	B	Protein	S	9
+FT	#SUB	32	  32 	VAL	A	50	  50 	ILE	B	Protein	S	1
+FT	#SUB	49	  49 	GLY	A	50	  50 	ILE	B	Protein	B	3
+FT	#SUB	50	  50 	ILE	A	49	  49 	GLY	B	Protein	S	2
+FT	#SUB	50	  50 	ILE	A	50	  50 	ILE	B	Protein	B	2
+FT	#SUB	50	  50 	ILE	A	52	  52 	GLY	B	Protein	S	1
+FT	#SUB	50	  50 	ILE	A	54	  54 	ILE	B	Protein	B	1
+FT	#SUB	50	  50 	ILE	A	80	  80 	THR	B	Protein	S	1
+FT	#SUB	50	  50 	ILE	A	84	  84 	ILE	B	Protein	S	1
+FT	#SUB	51	  51 	GLY	A	50	  50 	ILE	B	Protein	B	3
+FT	#SUB	51	  51 	GLY	A	51	  51 	GLY	B	Protein	B	2
+FT	#SUB	51	  51 	GLY	A	52	  52 	GLY	B	Protein	B	3
+FT	#SUB	52	  52 	GLY	A	50	  50 	ILE	B	Protein	B	2
+FT	#SUB	52	  52 	GLY	A	51	  51 	GLY	B	Protein	B	3
+FT	#SUB	54	  54 	ILE	A	50	  50 	ILE	B	Protein	S	1
+FT	#SUB	54	  54 	ILE	A	51	  51 	GLY	B	Protein	S	1
+FT	#SUB	67	  67 	CSO	A	99	  99 	PHE	B	Protein	S	2
+FT	#SUB	69	  69 	HIS	A	99	  99 	PHE	B	Protein	S	3
+FT	#SUB	80	  80 	THR	A	50	  50 	ILE	B	Protein	S	2
+FT	#SUB	81	  81 	PRO	A	49	  49 	GLY	B	Protein	S	1
+FT	#SUB	81	  81 	PRO	A	50	  50 	ILE	B	Protein	S	1
+FT	#SUB	84	  84 	ILE	A	50	  50 	ILE	B	Protein	S	1
+FT	#SUB	87	  87 	ARG	A	5	   5 	LEU	B	Protein	S	6
+FT	#SUB	87	  87 	ARG	A	6	   6 	TRP	B	Protein	S	2
+FT	#SUB	87	  87 	ARG	A	7	   7 	GLN	B	Protein	S	7
+FT	#SUB	87	  87 	ARG	A	8	   8 	ARG	B	Protein	S	6
+FT	#SUB	87	  87 	ARG	A	9	   9 	PRO	B	Protein	S	1
+FT	#SUB	90	  90 	LEU	A	5	   5 	LEU	B	Protein	S	2
+FT	#SUB	91	  91 	THR	A	5	   5 	LEU	B	Protein	S	3
+FT	#SUB	91	  91 	THR	A	6	   6 	TRP	B	Protein	S	5
+FT	#SUB	93	  93 	ILE	A	99	  99 	PHE	B	Protein	A	4
+FT	#SUB	94	  94 	GLY	A	98	  98 	ASN	B	Protein	B	1
+FT	#SUB	95	  95 	ALA	A	5	   5 	LEU	B	Protein	B	3
+FT	#SUB	95	  95 	ALA	A	98	  98 	ASN	B	Protein	A	3
+FT	#SUB	95	  95 	ALA	A	99	  99 	PHE	B	Protein	B	1
+FT	#SUB	96	  96 	THR	A	2	   2 	GLN	B	Protein	S	4
+FT	#SUB	96	  96 	THR	A	3	   3 	VAL	B	Protein	A	4
+FT	#SUB	96	  96 	THR	A	4	   4 	THR	B	Protein	S	2
+FT	#SUB	96	  96 	THR	A	96	  96 	THR	B	Protein	B	1
+FT	#SUB	96	  96 	THR	A	97	  97 	LEU	B	Protein	B	3
+FT	#SUB	96	  96 	THR	A	98	  98 	ASN	B	Protein	A	8
+FT	#SUB	97	  97 	LEU	A	1	   1 	PRO	B	Protein	B	1
+FT	#SUB	97	  97 	LEU	A	2	   2 	GLN	B	Protein	B	2
+FT	#SUB	97	  97 	LEU	A	3	   3 	VAL	B	Protein	A	9
+FT	#SUB	97	  97 	LEU	A	24	  24 	LEU	B	Protein	S	2
+FT	#SUB	97	  97 	LEU	A	26	  26 	THR	B	Protein	S	1
+FT	#SUB	97	  97 	LEU	A	96	  96 	THR	B	Protein	A	3
+FT	#SUB	98	  98 	ASN	A	1	   1 	PRO	B	Protein	A	3
+FT	#SUB	98	  98 	ASN	A	2	   2 	GLN	B	Protein	S	9
+FT	#SUB	98	  98 	ASN	A	94	  94 	GLY	B	Protein	B	1
+FT	#SUB	98	  98 	ASN	A	95	  95 	ALA	B	Protein	B	3
+FT	#SUB	98	  98 	ASN	A	96	  96 	THR	B	Protein	A	9
+FT	#SUB	98	  98 	ASN	A	98	  98 	ASN	B	Protein	S	2
+FT	#SUB	99	  99 	PHE	A	1	   1 	PRO	B	Protein	A	12
+FT	#SUB	99	  99 	PHE	A	67	  67 	CSO	B	Protein	S	2
+FT	#SUB	99	  99 	PHE	A	69	  69 	HIS	B	Protein	A	4
+FT	#SUB	99	  99 	PHE	A	93	  93 	ILE	B	Protein	S	2
+FT	#SUB	99	  99 	PHE	A	95	  95 	ALA	B	Protein	S	1
+FT	#HET	8	   8 	ARG	A	1	263 	XK2	A	S	1
+FT	#HET	25	  25 	ASP	A	1	263 	XK2	A	S	11
+FT	#HET	27	  27 	GLY	A	1	263 	XK2	A	B	5
+FT	#HET	28	  28 	ALA	A	1	263 	XK2	A	A	4
+FT	#HET	30	  30 	ASP	A	1	263 	XK2	A	A	8
+FT	#HET	32	  32 	VAL	A	1	263 	XK2	A	S	1
+FT	#HET	47	  47 	ILE	A	1	263 	XK2	A	S	2
+FT	#HET	48	  48 	GLY	A	1	263 	XK2	A	B	1
+FT	#HET	49	  49 	GLY	A	1	263 	XK2	A	B	4
+FT	#HET	50	  50 	ILE	A	1	263 	XK2	A	A	4
+FT	#HET	81	  81 	PRO	A	1	263 	XK2	A	S	1
+FT	#HET	82	  82 	VAL	A	1	263 	XK2	A	S	1
+FT	#HET	84	  84 	ILE	A	1	263 	XK2	A	S	3
+CC	SEQUENCE	99 AA (ATOM);
+CC	PQVTLWQRPL VTIKIGGQLK EALLDTGADD TVLEEMSLPG RWKPKMIGGI GGFIKVRQYD
+CC	QILIEIXGHK AIGTVLVGPT PVNIIGRNLL TQIGATLNF
+CC	!----
+CC	ALIGNMENT OF SEQRES AND ATOMRES
+CC	SEQRES PQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGI
+CC	ATOM   PQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGI
+CC	       **************************************************
+CC	SEQRES GGFIKVRQYDQILIEIXGHKAIGTVLVGPTPVNIIGRNLLTQIGATLNF
+CC	ATOM   GGFIKVRQYDQILIEIXGHKAIGTVLVGPTPVNIIGRNLLTQIGATLNF
+CC	       *************************************************
+SQ	SEQUENCE	99 AA;      MW;         CN;
+	PQVTLWQRPL VTIKIGGQLK EALLDTGADD TVLEEMSLPG RWKPKMIGGI GGFIKVRQYD
+	QILIEIXGHK AIGTVLVGPT PVNIIGRNLL TQIGATLNF
+//
+ID	1HVRB	STANDARD;	PRT;	99	AA.
+DT	CONVERTED FROM PDB (SEQRES) 1HVR
+DE	HIV-1 PROTEASE
+OS	Human immunodeficiency virus 1
+CC	EXPDTA	X-RAY DIFFRACTION
+CC	RESOLU	1.800
+CC	R-Factor	0.193
+FT	#SUB	1	   1 	PRO	B	97	  97 	LEU	A	Protein	B	1
+FT	#SUB	1	   1 	PRO	B	98	  98 	ASN	A	Protein	B	3
+FT	#SUB	1	   1 	PRO	B	99	  99 	PHE	A	Protein	A	12
+FT	#SUB	2	   2 	GLN	B	96	  96 	THR	A	Protein	S	4
+FT	#SUB	2	   2 	GLN	B	97	  97 	LEU	A	Protein	B	2
+FT	#SUB	2	   2 	GLN	B	98	  98 	ASN	A	Protein	A	9
+FT	#SUB	3	   3 	VAL	B	96	  96 	THR	A	Protein	B	4
+FT	#SUB	3	   3 	VAL	B	97	  97 	LEU	A	Protein	A	9
+FT	#SUB	4	   4 	THR	B	96	  96 	THR	A	Protein	A	2
+FT	#SUB	5	   5 	LEU	B	87	  87 	ARG	A	Protein	B	6
+FT	#SUB	5	   5 	LEU	B	90	  90 	LEU	A	Protein	S	2
+FT	#SUB	5	   5 	LEU	B	91	  91 	THR	A	Protein	A	3
+FT	#SUB	5	   5 	LEU	B	95	  95 	ALA	A	Protein	S	3
+FT	#SUB	6	   6 	TRP	B	87	  87 	ARG	A	Protein	B	2
+FT	#SUB	6	   6 	TRP	B	91	  91 	THR	A	Protein	A	5
+FT	#SUB	7	   7 	GLN	B	87	  87 	ARG	A	Protein	B	7
+FT	#SUB	8	   8 	ARG	B	29	  29 	ASP	A	Protein	S	9
+FT	#SUB	8	   8 	ARG	B	87	  87 	ARG	A	Protein	A	6
+FT	#SUB	9	   9 	PRO	B	26	  26 	THR	A	Protein	S	2
+FT	#SUB	9	   9 	PRO	B	87	  87 	ARG	A	Protein	S	1
+FT	#SUB	23	  23 	LEU	B	27	  27 	GLY	A	Protein	S	2
+FT	#SUB	24	  24 	LEU	B	26	  26 	THR	A	Protein	B	4
+FT	#SUB	24	  24 	LEU	B	27	  27 	GLY	A	Protein	B	1
+FT	#SUB	24	  24 	LEU	B	97	  97 	LEU	A	Protein	S	2
+FT	#SUB	25	  25 	ASP	B	25	  25 	ASP	A	Protein	S	2
+FT	#SUB	25	  25 	ASP	B	26	  26 	THR	A	Protein	B	3
+FT	#SUB	25	  25 	ASP	B	27	  27 	GLY	A	Protein	S	3
+FT	#SUB	26	  26 	THR	B	9	   9 	PRO	A	Protein	B	2
+FT	#SUB	26	  26 	THR	B	24	  24 	LEU	A	Protein	A	4
+FT	#SUB	26	  26 	THR	B	25	  25 	ASP	A	Protein	S	3
+FT	#SUB	26	  26 	THR	B	26	  26 	THR	A	Protein	A	9
+FT	#SUB	26	  26 	THR	B	97	  97 	LEU	A	Protein	S	1
+FT	#SUB	27	  27 	GLY	B	23	  23 	LEU	A	Protein	B	2
+FT	#SUB	27	  27 	GLY	B	25	  25 	ASP	A	Protein	B	4
+FT	#SUB	29	  29 	ASP	B	8	   8 	ARG	A	Protein	S	7
+FT	#SUB	49	  49 	GLY	B	50	  50 	ILE	A	Protein	B	2
+FT	#SUB	49	  49 	GLY	B	81	  81 	PRO	A	Protein	B	1
+FT	#SUB	50	  50 	ILE	B	32	  32 	VAL	A	Protein	S	1
+FT	#SUB	50	  50 	ILE	B	49	  49 	GLY	A	Protein	B	3
+FT	#SUB	50	  50 	ILE	B	50	  50 	ILE	A	Protein	B	2
+FT	#SUB	50	  50 	ILE	B	51	  51 	GLY	A	Protein	B	3
+FT	#SUB	50	  50 	ILE	B	52	  52 	GLY	A	Protein	B	2
+FT	#SUB	50	  50 	ILE	B	54	  54 	ILE	A	Protein	S	1
+FT	#SUB	50	  50 	ILE	B	80	  80 	THR	A	Protein	S	2
+FT	#SUB	50	  50 	ILE	B	81	  81 	PRO	A	Protein	S	1
+FT	#SUB	50	  50 	ILE	B	84	  84 	ILE	A	Protein	S	1
+FT	#SUB	51	  51 	GLY	B	51	  51 	GLY	A	Protein	B	2
+FT	#SUB	51	  51 	GLY	B	52	  52 	GLY	A	Protein	B	3
+FT	#SUB	51	  51 	GLY	B	54	  54 	ILE	A	Protein	B	1
+FT	#SUB	52	  52 	GLY	B	50	  50 	ILE	A	Protein	B	1
+FT	#SUB	52	  52 	GLY	B	51	  51 	GLY	A	Protein	B	3
+FT	#SUB	54	  54 	ILE	B	50	  50 	ILE	A	Protein	S	1
+FT	#SUB	67	  67 	CSO	B	99	  99 	PHE	A	Protein	S	2
+FT	#SUB	69	  69 	HIS	B	99	  99 	PHE	A	Protein	S	4
+FT	#SUB	80	  80 	THR	B	50	  50 	ILE	A	Protein	S	1
+FT	#SUB	84	  84 	ILE	B	50	  50 	ILE	A	Protein	S	1
+FT	#SUB	87	  87 	ARG	B	5	   5 	LEU	A	Protein	S	5
+FT	#SUB	87	  87 	ARG	B	6	   6 	TRP	A	Protein	S	2
+FT	#SUB	87	  87 	ARG	B	7	   7 	GLN	A	Protein	S	8
+FT	#SUB	87	  87 	ARG	B	8	   8 	ARG	A	Protein	S	4
+FT	#SUB	87	  87 	ARG	B	9	   9 	PRO	A	Protein	S	1
+FT	#SUB	91	  91 	THR	B	5	   5 	LEU	A	Protein	S	2
+FT	#SUB	91	  91 	THR	B	6	   6 	TRP	A	Protein	S	6
+FT	#SUB	93	  93 	ILE	B	99	  99 	PHE	A	Protein	A	2
+FT	#SUB	94	  94 	GLY	B	98	  98 	ASN	A	Protein	B	1
+FT	#SUB	95	  95 	ALA	B	5	   5 	LEU	A	Protein	B	2
+FT	#SUB	95	  95 	ALA	B	98	  98 	ASN	A	Protein	A	3
+FT	#SUB	95	  95 	ALA	B	99	  99 	PHE	A	Protein	B	1
+FT	#SUB	96	  96 	THR	B	2	   2 	GLN	A	Protein	S	2
+FT	#SUB	96	  96 	THR	B	3	   3 	VAL	A	Protein	A	4
+FT	#SUB	96	  96 	THR	B	4	   4 	THR	A	Protein	S	2
+FT	#SUB	96	  96 	THR	B	96	  96 	THR	A	Protein	B	1
+FT	#SUB	96	  96 	THR	B	97	  97 	LEU	A	Protein	B	3
+FT	#SUB	96	  96 	THR	B	98	  98 	ASN	A	Protein	A	9
+FT	#SUB	97	  97 	LEU	B	1	   1 	PRO	A	Protein	B	1
+FT	#SUB	97	  97 	LEU	B	2	   2 	GLN	A	Protein	B	2
+FT	#SUB	97	  97 	LEU	B	3	   3 	VAL	A	Protein	A	12
+FT	#SUB	97	  97 	LEU	B	9	   9 	PRO	A	Protein	S	1
+FT	#SUB	97	  97 	LEU	B	96	  96 	THR	A	Protein	A	3
+FT	#SUB	98	  98 	ASN	B	1	   1 	PRO	A	Protein	B	2
+FT	#SUB	98	  98 	ASN	B	2	   2 	GLN	A	Protein	S	5
+FT	#SUB	98	  98 	ASN	B	94	  94 	GLY	A	Protein	B	1
+FT	#SUB	98	  98 	ASN	B	95	  95 	ALA	A	Protein	B	3
+FT	#SUB	98	  98 	ASN	B	96	  96 	THR	A	Protein	A	8
+FT	#SUB	98	  98 	ASN	B	98	  98 	ASN	A	Protein	S	2
+FT	#SUB	99	  99 	PHE	B	1	   1 	PRO	A	Protein	A	10
+FT	#SUB	99	  99 	PHE	B	24	  24 	LEU	A	Protein	S	1
+FT	#SUB	99	  99 	PHE	B	67	  67 	CSO	A	Protein	S	2
+FT	#SUB	99	  99 	PHE	B	69	  69 	HIS	A	Protein	S	3
+FT	#SUB	99	  99 	PHE	B	93	  93 	ILE	A	Protein	S	4
+FT	#SUB	99	  99 	PHE	B	95	  95 	ALA	A	Protein	S	1
+FT	#HET	25	  25 	ASP	B	1	263 	XK2	A	S	12
+FT	#HET	27	  27 	GLY	B	1	263 	XK2	A	B	5
+FT	#HET	28	  28 	ALA	B	1	263 	XK2	A	A	5
+FT	#HET	30	  30 	ASP	B	1	263 	XK2	A	A	7
+FT	#HET	32	  32 	VAL	B	1	263 	XK2	A	S	3
+FT	#HET	47	  47 	ILE	B	1	263 	XK2	A	S	1
+FT	#HET	48	  48 	GLY	B	1	263 	XK2	A	B	3
+FT	#HET	49	  49 	GLY	B	1	263 	XK2	A	B	6
+FT	#HET	50	  50 	ILE	B	1	263 	XK2	A	A	6
+FT	#HET	81	  81 	PRO	B	1	263 	XK2	A	S	1
+CC	SEQUENCE	99 AA (ATOM);
+CC	PQVTLWQRPL VTIKIGGQLK EALLDTGADD TVLEEMSLPG RWKPKMIGGI GGFIKVRQYD
+CC	QILIEIXGHK AIGTVLVGPT PVNIIGRNLL TQIGATLNF
+CC	!----
+CC	ALIGNMENT OF SEQRES AND ATOMRES
+CC	SEQRES PQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGI
+CC	ATOM   PQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGI
+CC	       **************************************************
+CC	SEQRES GGFIKVRQYDQILIEIXGHKAIGTVLVGPTPVNIIGRNLLTQIGATLNF
+CC	ATOM   GGFIKVRQYDQILIEIXGHKAIGTVLVGPTPVNIIGRNLLTQIGATLNF
+CC	       *************************************************
+SQ	SEQUENCE	99 AA;      MW;         CN;
+	PQVTLWQRPL VTIKIGGQLK EALLDTGADD TVLEEMSLPG RWKPKMIGGI GGFIKVRQYD
+	QILIEIXGHK AIGTVLVGPT PVNIIGRNLL TQIGATLNF
+//

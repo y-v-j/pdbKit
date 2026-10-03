@@ -1,0 +1,28 @@
+{
+  "id": "1A6M",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 151,
+  "ligand_residues": 4,
+  "water_molecules": 186,
+  "atoms": 1584,
+  "hetatm_atoms": 248,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "SO4": 2,
+    "HEM": 1,
+    "OXY": 1
+  },
+  "exp_title": "OXY-MYOGLOBIN, ATOMIC RESOLUTION",
+  "exp_classification": "OXYGEN TRANSPORT",
+  "exp_organism": "Physeter catodon",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.0",
+  "exp_r_work": "0.1220000",
+  "exp_r_free": "0.1587000",
+  "input_format": "cif"
+}

@@ -1,0 +1,7 @@
+chain	resname	resseq	icode	atoms
+A	CL	1		1
+A	CL	350		1
+A	MLI	351		7
+B	CL	1		1
+B	CL	351		1
+B	MLI	350		7

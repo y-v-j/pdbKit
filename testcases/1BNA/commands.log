@@ -1,0 +1,188 @@
+# pdbKit case study: 1BNA  (input: /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif)
+# every command below was run in /var/home/kestrel/Projects/potential_projects/github-new/pdbKit/testcases/1BNA
+
+$ pdbkit info /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --table json -o info.json
+  -> exit 0 in 0.5s
+
+$ pdbkit validate /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif
+OK: cif file, 1 model(s), 566 atoms
+  -> exit 0 in 0.5s
+
+$ pdbkit exper /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif
+id	1BNA
+title	STRUCTURE OF A B-DNA DODECAMER. CONFORMATION AND DYNAMICS
+classification	DNA
+organism	NA
+method	X-RAY DIFFRACTION
+resolution	1.900
+r_work	0.1780000
+r_free	NA
+  -> exit 0 in 0.5s
+
+$ pdbkit assembly /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o assembly.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -d .
+./1bna.fasta
+  -> exit 0 in 0.5s
+
+$ pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --source atom -o 1BNA_modelled.fasta
+1BNA_modelled.fasta
+  -> exit 0 in 0.5s
+
+$ pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif
+x	14.6702
+y	21.0028
+z	8.8472
+weighting	mass
+radius_of_gyration	13.2208
+  -> exit 0 in 0.5s
+
+$ pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -c A --atoms ca --geometric
+x	14.8187
+y	21.7064
+z	10.336
+weighting	geometric
+radius_of_gyration	13.2801
+  -> exit 0 in 0.5s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o 1BNA_centered.cif
+  [stderr] centre of mass before: 14.6702 21.0028 8.8472
+  [stderr] wrote 1BNA_centered.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -c A --keep-all -o 1BNA_chainA_com0.cif
+  [stderr] centre of mass before: 15.0585 21.5864 9.0468
+  [stderr] wrote 1BNA_chainA_com0.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -c A --het none --no-water -o 1BNA_chainA_protein_centered.cif
+  [stderr] centre of mass before: 15.0991 21.5660 8.8286
+  [stderr] wrote 1BNA_chainA_protein_centered.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --atoms ca -d split_ca
+  [stderr] pdbKit: chain 'A' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'B' has no atoms matching the selection - skipped
+  -> exit 0 in 0.5s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --atoms ca --het all -d split_ca_het
+  [stderr] pdbKit: chain 'A' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'B' has no atoms matching the selection - skipped
+  -> exit 0 in 0.5s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --het all --water -d split_all_atom_het_water
+split_all_atom_het_water/1bna_A_all_het_wat.cif
+split_all_atom_het_water/1bna_B_all_het_wat.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -c A,B -d split_selected
+split_selected/1bna_A_all.cif
+split_selected/1bna_B_all.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --atoms ca -f pdb -d split_ca_pdb
+  [stderr] pdbKit: chain 'A' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'B' has no atoms matching the selection - skipped
+  -> exit 0 in 0.5s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --atoms backbone --het none --no-water -o 1BNA_backbone.cif
+  [stderr] wrote 1BNA_backbone.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --hetatm-only -o 1BNA_hetatm_only.cif
+  [stderr] wrote 1BNA_hetatm_only.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --altloc best --no-hydrogens -o 1BNA_single_conformer.cif
+  [stderr] wrote 1BNA_single_conformer.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit convert /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o 1BNA.pdb
+  [stderr] wrote 1BNA.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit convert 1BNA.pdb -o 1BNA_roundtrip.cif
+  [stderr] wrote 1BNA_roundtrip.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit gaps /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o gaps.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit ligands /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o ligands.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit disulfide /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o disulfide.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit closecontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --ca-only -o closecontacts.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit watercontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o watercontacts.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit neighbors /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o neighbors.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit torsion /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o torsion.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit iondist /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --step 0.5 -o iondist.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit sasa /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o sasa.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit contacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -t A:1 --cutoff 4.0 -o contacts.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit distances /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -r A:1:CA --atom CA -c A -o distances.tsv
+  [stderr] pdbkit: error: Reference atom 'A:1:CA' not found.
+  -> exit 2 in 0.5s
+
+$ pdbkit param /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif
+  [stderr] pdbkit: error: No protein residues selected.
+  -> exit 2 in 0.5s
+
+$ pdbkit coulomb /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif
+coulomb_energy_kcal_mol	0.0
+  -> exit 0 in 0.5s
+
+$ pdbkit centerasu /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o 1BNA_asu_in_cell.cif
+  [stderr] fractional shift: 0 0 0
+  [stderr] wrote 1BNA_asu_in_cell.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit renumber /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --start 1 -o 1BNA_renumbered.cif
+  [stderr] wrote 1BNA_renumbered.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit rename /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --chain-map A:z -o 1BNA_chainA_as_z.cif
+  [stderr] wrote 1BNA_chainA_as_z.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit setfield /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif --bfactor 0 --occupancy 1 -o 1BNA_b0_occ1.cif
+  [stderr] wrote 1BNA_b0_occ1.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit sort /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -o 1BNA_sorted.cif
+  [stderr] wrote 1BNA_sorted.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -d domains
+domains/1BNA_domain_ss_info.csv
+  [stderr] /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -> domains/1BNA_domain_ss_info.csv
+  -> exit 0 in 0.5s
+
+$ pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -q -d domains_offline
+domains_offline/1BNA_domain_ss_info.csv
+  [stderr] /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/1bna.cif -> domains_offline/1BNA_domain_ss_info.csv
+  -> exit 0 in 0.5s
+
+$ pdbkit hetnavi 1BNA -d hetnavi --save-raw
+Parsed 2 chain record(s).
+hetnavi/1BNA_all_het_interactions.csv
+hetnavi/1BNA_subunit_interactions.csv
+hetnavi/1BNA_assembly1.dat
+  -> exit 0 in 1.0s
+

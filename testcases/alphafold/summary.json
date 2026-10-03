@@ -1,0 +1,108 @@
+{
+  "fetch_tests": {
+    "cif_and_pdb_same_atoms": true,
+    "stdout_download_is_valid_pdb": true,
+    "pae_matrix_is_L_by_L": true,
+    "custom_name_written": true,
+    "several_ids": true,
+    "commands_exit_as_expected": true
+  },
+  "models": [
+    {
+      "id": "AF-P02185-F1",
+      "protein": "myoglobin, sperm whale (1A6M)",
+      "residues": 154,
+      "atoms": 1225,
+      "mean_pLDDT": 97.5,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P00918-F1",
+      "protein": "carbonic anhydrase II, human (1CA2)",
+      "residues": 260,
+      "atoms": 2073,
+      "mean_pLDDT": 97.4,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P0DP23-F1",
+      "protein": "calmodulin-1, human",
+      "residues": 149,
+      "atoms": 1174,
+      "mean_pLDDT": 85.2,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P0A6F5-F1",
+      "protein": "GroEL, E. coli (1AON)",
+      "residues": 548,
+      "atoms": 4001,
+      "mean_pLDDT": 90.8,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P03372-F1",
+      "protein": "estrogen receptor alpha, human (3ERT)",
+      "residues": 595,
+      "atoms": 4637,
+      "mean_pLDDT": 66.4,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P00533-F1",
+      "protein": "EGFR, human (1M17)",
+      "residues": 1210,
+      "atoms": 9392,
+      "mean_pLDDT": 75.9,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P0A334-F1",
+      "protein": "KcsA potassium channel (1K4C)",
+      "residues": 160,
+      "atoms": 1250,
+      "mean_pLDDT": 89.6,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    },
+    {
+      "id": "AF-P69905-F1",
+      "protein": "haemoglobin alpha, human (4HHB)",
+      "residues": 142,
+      "atoms": 1077,
+      "mean_pLDDT": 98.1,
+      "commands": 29,
+      "commands_ok": 29,
+      "checks": 14,
+      "checks_ok": 14,
+      "failed": ""
+    }
+  ]
+}

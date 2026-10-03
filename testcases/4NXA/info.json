@@ -1,0 +1,29 @@
+{
+  "id": "4NXA",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 153,
+  "ligand_residues": 11,
+  "water_molecules": 56,
+  "atoms": 1353,
+  "hetatm_atoms": 121,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "HEM": 1,
+    "ZN": 2,
+    "SO4": 3,
+    "XE": 5
+  },
+  "exp_title": "SPERM WHALE MYOGLOBIN UNDER XENON PRESSURE 30 Bar",
+  "exp_classification": "OXYGEN TRANSPORT",
+  "exp_organism": "Physeter catodon",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.60",
+  "exp_r_work": "0.18534",
+  "exp_r_free": "0.20164",
+  "input_format": "cif"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "2BFN",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 294,
+  "ligand_residues": 5,
+  "water_molecules": 337,
+  "atoms": 2743,
+  "hetatm_atoms": 347,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "D2P": 1,
+    "CL": 1,
+    "CA": 3
+  },
+  "exp_title": "The crystal structure of the complex of the haloalkane dehalogenase LinB with the product of dehalogenation reaction 1,2-dichloropropane.",
+  "exp_classification": "HYDROLASE",
+  "exp_organism": "SPHINGOMONAS PAUCIMOBILIS",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.60",
+  "exp_r_work": "0.149",
+  "exp_r_free": "0.171",
+  "input_format": "cif"
+}

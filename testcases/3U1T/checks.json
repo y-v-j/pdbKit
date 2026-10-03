@@ -1,0 +1,478 @@
+{
+  "id": "3U1T",
+  "commands": [
+    {
+      "label": "info",
+      "cmd": "pdbkit info /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --table json -o info.json",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.83,
+      "stderr": ""
+    },
+    {
+      "label": "validate",
+      "cmd": "pdbkit validate /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.1,
+      "stderr": ""
+    },
+    {
+      "label": "exper",
+      "cmd": "pdbkit exper /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.82,
+      "stderr": ""
+    },
+    {
+      "label": "assembly",
+      "cmd": "pdbkit assembly /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o assembly.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.83,
+      "stderr": ""
+    },
+    {
+      "label": "fasta",
+      "cmd": "pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -d .",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.84,
+      "stderr": ""
+    },
+    {
+      "label": "fasta_atom",
+      "cmd": "pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --source atom -o 3U1T_modelled.fasta",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.87,
+      "stderr": ""
+    },
+    {
+      "label": "com",
+      "cmd": "pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.84,
+      "stderr": ""
+    },
+    {
+      "label": "com",
+      "cmd": "pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -c A --atoms ca --geometric",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.92,
+      "stderr": ""
+    },
+    {
+      "label": "center",
+      "cmd": "pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o 3U1T_centered.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.04,
+      "stderr": "centre of mass before: 36.4735 13.0050 68.5253\nwrote 3U1T_centered.cif"
+    },
+    {
+      "label": "center_keepall",
+      "cmd": "pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -c A --keep-all -o 3U1T_chainA_com0.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.04,
+      "stderr": "centre of mass before: 49.6624 25.7318 61.1754\nwrote 3U1T_chainA_com0.cif"
+    },
+    {
+      "label": "center_chain",
+      "cmd": "pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -c A --het none --no-water -o 3U1T_chainA_protein_centered.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.95,
+      "stderr": "centre of mass before: 49.6061 25.9399 61.4144\nwrote 3U1T_chainA_protein_centered.cif"
+    },
+    {
+      "label": "split_ca",
+      "cmd": "pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --atoms ca -d split_ca",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.0,
+      "stderr": ""
+    },
+    {
+      "label": "split_ca_het",
+      "cmd": "pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --atoms ca --het all -d split_ca_het",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.02,
+      "stderr": ""
+    },
+    {
+      "label": "split_all",
+      "cmd": "pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --het all --water -d split_all_atom_het_water",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.98,
+      "stderr": ""
+    },
+    {
+      "label": "split_select_het",
+      "cmd": "pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -c A,B --het CL -d split_selected",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.02,
+      "stderr": ""
+    },
+    {
+      "label": "split_select_ca_het_pdb",
+      "cmd": "pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -c A,B --atoms ca --het CL -f pdb -d split_selected",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.98,
+      "stderr": ""
+    },
+    {
+      "label": "split_ca_pdb",
+      "cmd": "pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --atoms ca -f pdb -d split_ca_pdb",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.02,
+      "stderr": ""
+    },
+    {
+      "label": "extract_backbone",
+      "cmd": "pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --atoms backbone --het none --no-water -o 3U1T_backbone.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.02,
+      "stderr": "wrote 3U1T_backbone.cif"
+    },
+    {
+      "label": "extract_hetatm",
+      "cmd": "pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --hetatm-only -o 3U1T_hetatm_only.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.92,
+      "stderr": "wrote 3U1T_hetatm_only.cif"
+    },
+    {
+      "label": "extract_altloc",
+      "cmd": "pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --altloc best --no-hydrogens -o 3U1T_single_conformer.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.98,
+      "stderr": "wrote 3U1T_single_conformer.cif"
+    },
+    {
+      "label": "convert_pdb",
+      "cmd": "pdbkit convert /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o 3U1T.pdb",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.89,
+      "stderr": "wrote 3U1T.pdb"
+    },
+    {
+      "label": "convert_back",
+      "cmd": "pdbkit convert 3U1T.pdb -o 3U1T_roundtrip.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.59,
+      "stderr": "wrote 3U1T_roundtrip.cif"
+    },
+    {
+      "label": "gaps",
+      "cmd": "pdbkit gaps /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o gaps.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.84,
+      "stderr": ""
+    },
+    {
+      "label": "ligands",
+      "cmd": "pdbkit ligands /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o ligands.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.82,
+      "stderr": ""
+    },
+    {
+      "label": "disulfide",
+      "cmd": "pdbkit disulfide /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o disulfide.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.83,
+      "stderr": ""
+    },
+    {
+      "label": "closecontacts",
+      "cmd": "pdbkit closecontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --ca-only -o closecontacts.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.81,
+      "stderr": ""
+    },
+    {
+      "label": "watercontacts",
+      "cmd": "pdbkit watercontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o watercontacts.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.53,
+      "stderr": ""
+    },
+    {
+      "label": "neighbors",
+      "cmd": "pdbkit neighbors /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o neighbors.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.92,
+      "stderr": ""
+    },
+    {
+      "label": "torsion",
+      "cmd": "pdbkit torsion /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o torsion.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.0,
+      "stderr": ""
+    },
+    {
+      "label": "iondist",
+      "cmd": "pdbkit iondist /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --step 0.5 -o iondist.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.83,
+      "stderr": ""
+    },
+    {
+      "label": "sasa",
+      "cmd": "pdbkit sasa /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o sasa.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 2.52,
+      "stderr": ""
+    },
+    {
+      "label": "contacts",
+      "cmd": "pdbkit contacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -t CL --cutoff 4.0 -o contacts.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.83,
+      "stderr": ""
+    },
+    {
+      "label": "distances",
+      "cmd": "pdbkit distances /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -r A:44:CA --atom CA -c A -o distances.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.84,
+      "stderr": ""
+    },
+    {
+      "label": "param",
+      "cmd": "pdbkit param /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.81,
+      "stderr": ""
+    },
+    {
+      "label": "coulomb",
+      "cmd": "pdbkit coulomb /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.82,
+      "stderr": ""
+    },
+    {
+      "label": "centerasu",
+      "cmd": "pdbkit centerasu /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o 3U1T_asu_in_cell.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.98,
+      "stderr": "fractional shift: 0 0 0\nwrote 3U1T_asu_in_cell.cif"
+    },
+    {
+      "label": "renumber",
+      "cmd": "pdbkit renumber /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --start 1 -o 3U1T_renumbered.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.99,
+      "stderr": "wrote 3U1T_renumbered.cif"
+    },
+    {
+      "label": "rename",
+      "cmd": "pdbkit rename /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --chain-map A:z -o 3U1T_chainA_as_z.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.97,
+      "stderr": "wrote 3U1T_chainA_as_z.cif"
+    },
+    {
+      "label": "setfield",
+      "cmd": "pdbkit setfield /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif --bfactor 0 --occupancy 1 -o 3U1T_b0_occ1.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.06,
+      "stderr": "wrote 3U1T_b0_occ1.cif"
+    },
+    {
+      "label": "sort",
+      "cmd": "pdbkit sort /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -o 3U1T_sorted.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.99,
+      "stderr": "wrote 3U1T_sorted.cif"
+    },
+    {
+      "label": "domains_live",
+      "cmd": "pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -d domains",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 2.88,
+      "stderr": "/home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -> domains/3U1T_domain_ss_info.csv"
+    },
+    {
+      "label": "domains_offline",
+      "cmd": "pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -q -d domains_offline",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.82,
+      "stderr": "/home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/3u1t.cif -> domains_offline/3U1T_domain_ss_info.csv"
+    },
+    {
+      "label": "hetnavi",
+      "cmd": "pdbkit hetnavi 3U1T -d hetnavi --save-raw",
+      "rc": 0,
+      "expected": null,
+      "ok": true,
+      "seconds": 1.07,
+      "stderr": ""
+    }
+  ],
+  "checks": {
+    "info_atoms_equal_gemmi": {
+      "ok": true,
+      "detail": "5164 vs gemmi 5164"
+    },
+    "info_models_equal_gemmi": {
+      "ok": true,
+      "detail": "1 vs 1"
+    },
+    "all_outputs_parse_in_gemmi": {
+      "ok": true,
+      "detail": "25 files; failures: []"
+    },
+    "all_outputs_load_in_pymol": {
+      "ok": true,
+      "detail": "25 files; failures: []"
+    },
+    "gemmi_and_pymol_agree_on_atom_counts": {
+      "ok": true,
+      "detail": ""
+    },
+    "split_all_is_a_partition": {
+      "ok": true,
+      "detail": "sum over 2 chain files 5164 vs input 5164"
+    },
+    "split_ca_counts_equal_gemmi": {
+      "ok": true,
+      "detail": "2 files, gemmi protein chains 2; []"
+    },
+    "split_ca_pdb_equals_cif": {
+      "ok": true,
+      "detail": "[]"
+    },
+    "centered_com_zero_gemmi": {
+      "ok": true,
+      "detail": "|COM| = 0.0006 A (gemmi atoms, pdbKit definition: highest-occupancy location, full mass)"
+    },
+    "centered_com_zero_pdbkit": {
+      "ok": true,
+      "detail": "0.00058 A"
+    },
+    "keepall_chain_com_zero": {
+      "ok": true,
+      "detail": "chain A |COM| 0.0006 A, atoms 5164/5164"
+    },
+    "keepall_is_rigid_translation": {
+      "ok": true,
+      "detail": "max deviation 0.0000 A"
+    },
+    "fasta_equals_rcsb": {
+      "ok": true,
+      "detail": "2 chains; differ: []; not in RCSB: []"
+    },
+    "disulfides_equal_struct_conn": {
+      "ok": true,
+      "detail": "0 found, 0 recorded"
+    },
+    "cif_pdb_cif_round_trip_identical": {
+      "ok": true,
+      "detail": "5164 atoms"
+    },
+    "all_outputs_validate": {
+      "ok": true,
+      "detail": ""
+    },
+    "domains_offline_identical_to_original": {
+      "ok": true,
+      "detail": "3U1T_domain_ss_info.csv"
+    },
+    "domains_live_identical_to_original": {
+      "ok": true,
+      "detail": "3U1T_domain_ss_info.csv"
+    },
+    "hetnavi_matches_original": {
+      "ok": true,
+      "detail": "#HET lines without H-bond column: original parser kept 0 of 29 contacts, pdbKit keeps 29; other CSVs byte-identical"
+    },
+    "pdb_input_parity": {
+      "ok": true,
+      "detail": "RCSB .pdb gives the same FASTA, sequences, split files (CA and all-atom), COM and domain columns"
+    },
+    "all_commands_exit_as_expected": {
+      "ok": true,
+      "detail": ""
+    }
+  }
+}

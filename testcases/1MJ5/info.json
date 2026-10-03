@@ -1,0 +1,27 @@
+{
+  "id": "1MJ5",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 298,
+  "ligand_residues": 5,
+  "water_molecules": 658,
+  "atoms": 5802,
+  "hetatm_atoms": 663,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "MG": 3,
+    "CL": 2
+  },
+  "exp_title": "LINB (haloalkane dehalogenase) from sphingomonas paucimobilis UT26 at atomic resolution",
+  "exp_classification": "HYDROLASE",
+  "exp_organism": "Sphingomonas paucimobilis",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "0.950",
+  "exp_r_work": "0.1116",
+  "exp_r_free": "0.1411",
+  "input_format": "cif"
+}

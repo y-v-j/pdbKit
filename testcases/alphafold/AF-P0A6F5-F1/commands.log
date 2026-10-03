@@ -1,0 +1,130 @@
+# pdbKit AlphaFold case study: AF-P0A6F5-F1 - GroEL, E. coli (1AON)
+
+$ pdbkit fetch P0A6F5 --pae -d .
+./AF-P0A6F5-F1.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P0A6F5 -f pdb -d .
+./AF-P0A6F5-F1.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit info AF-P0A6F5-F1.cif --table json -o info.json
+  -> exit 0 in 0.7s
+
+$ pdbkit validate AF-P0A6F5-F1.cif
+OK: cif file, 1 model(s), 4001 atoms
+  -> exit 0 in 0.8s
+
+$ pdbkit exper AF-P0A6F5-F1.cif
+id	AF-P0A6F5-F1
+title	NA
+classification	NA
+organism	NA
+method	NA
+resolution	NA
+r_work	NA
+r_free	NA
+  -> exit 0 in 0.6s
+
+$ pdbkit fasta AF-P0A6F5-F1.cif -d .
+./AF-P0A6F5-F1.fasta
+  -> exit 0 in 0.7s
+
+$ pdbkit com AF-P0A6F5-F1.cif
+x	2.3617
+y	2.0183
+z	1.5717
+weighting	mass
+radius_of_gyration	27.912
+  -> exit 0 in 0.6s
+
+$ pdbkit center AF-P0A6F5-F1.cif -o AF-P0A6F5-F1_centered.cif
+  [stderr] centre of mass before: 2.3617 2.0183 1.5717
+  [stderr] wrote AF-P0A6F5-F1_centered.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit center AF-P0A6F5-F1.cif --atoms ca --geometric -o AF-P0A6F5-F1_ca_centroid0.pdb
+  [stderr] centre of geometry before: 2.0484 2.1596 1.6294
+  [stderr] wrote AF-P0A6F5-F1_ca_centroid0.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit split AF-P0A6F5-F1.cif --atoms ca -d split_ca
+split_ca/AF-P0A6F5-F1_A_ca.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit split AF-P0A6F5-F1.cif --atoms backbone -f pdb -d split_backbone
+split_backbone/AF-P0A6F5-F1_A_backbone.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit extract AF-P0A6F5-F1.cif --residues 1:50 -o AF-P0A6F5-F1_first50.cif
+  [stderr] wrote AF-P0A6F5-F1_first50.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit convert AF-P0A6F5-F1.cif -o AF-P0A6F5-F1_converted.pdb
+  [stderr] wrote AF-P0A6F5-F1_converted.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit gaps AF-P0A6F5-F1.cif -o gaps.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit ligands AF-P0A6F5-F1.cif -o ligands.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit disulfide AF-P0A6F5-F1.cif -o disulfide.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit closecontacts AF-P0A6F5-F1.cif -o closecontacts.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit neighbors AF-P0A6F5-F1.cif -o neighbors.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit torsion AF-P0A6F5-F1.cif -o torsion.tsv
+  -> exit 0 in 0.8s
+
+$ pdbkit sasa AF-P0A6F5-F1.cif -o sasa.tsv
+  -> exit 0 in 1.9s
+
+$ pdbkit watercontacts AF-P0A6F5-F1.cif -o watercontacts.tsv
+  -> exit 0 in 1.2s
+
+$ pdbkit param AF-P0A6F5-F1.cif
+residues	548
+molecular_weight	57336.64
+pI	4.796
+fraction_titratable	0.281
+fraction_acidic	0.1478
+fraction_basic	0.115
+charge_fully_ionised	-18
+composition	{"ALA": 74, "ARG": 22, "ASN": 19, "ASP": 35, "CYS": 3, "GLN": 16, "GLU": 46, "GLY": 59, "HIS": 1, "ILE": 32, "LEU": 42, "LYS": 40, "MET": 23, "PHE": 7, "PRO": 14, "SER": 17, "THR": 33, "TYR": 7, "VAL": 58}
+non_standard_residues	[]
+  -> exit 0 in 0.6s
+
+$ pdbkit coulomb AF-P0A6F5-F1.cif
+coulomb_energy_kcal_mol	-48.2442
+  -> exit 0 in 0.6s
+
+$ pdbkit assembly AF-P0A6F5-F1.cif -o assembly.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit centerasu AF-P0A6F5-F1.cif -o x.cif
+  [stderr] pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise.
+  -> exit 2 in 0.6s
+
+$ pdbkit renumber AF-P0A6F5-F1.cif --shift 1000 -o AF-P0A6F5-F1_shift1000.cif
+  [stderr] wrote AF-P0A6F5-F1_shift1000.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit setfield AF-P0A6F5-F1.cif --occupancy 1 -o AF-P0A6F5-F1_occ1.pdb
+  [stderr] wrote AF-P0A6F5-F1_occ1.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit domains AF-P0A6F5-F1.cif -d domains
+domains/AF-P0A6F5-F1_domain_ss_info.csv
+  [stderr] AF-P0A6F5-F1.cif -> domains/AF-P0A6F5-F1_domain_ss_info.csv
+  -> exit 0 in 1.7s
+
+$ pdbkit hetnavi AF-P0A6F5-F1.cif -d hetnavi
+  [stderr] pdbkit: error: AF-P0A6F5-F1.cif has no 4-character PDB ID (entry ID 'AF-P0A6F5-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one.
+  -> exit 2 in 0.6s
+

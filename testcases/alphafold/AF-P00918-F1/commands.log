@@ -1,0 +1,130 @@
+# pdbKit AlphaFold case study: AF-P00918-F1 - carbonic anhydrase II, human (1CA2)
+
+$ pdbkit fetch P00918 --pae -d .
+./AF-P00918-F1.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P00918 -f pdb -d .
+./AF-P00918-F1.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit info AF-P00918-F1.cif --table json -o info.json
+  -> exit 0 in 0.5s
+
+$ pdbkit validate AF-P00918-F1.cif
+OK: cif file, 1 model(s), 2073 atoms
+  -> exit 0 in 0.6s
+
+$ pdbkit exper AF-P00918-F1.cif
+id	AF-P00918-F1
+title	NA
+classification	NA
+organism	NA
+method	NA
+resolution	NA
+r_work	NA
+r_free	NA
+  -> exit 0 in 0.6s
+
+$ pdbkit fasta AF-P00918-F1.cif -d .
+./AF-P00918-F1.fasta
+  -> exit 0 in 0.6s
+
+$ pdbkit com AF-P00918-F1.cif
+x	0.7679
+y	1.9905
+z	-1.0101
+weighting	mass
+radius_of_gyration	17.476
+  -> exit 0 in 0.6s
+
+$ pdbkit center AF-P00918-F1.cif -o AF-P00918-F1_centered.cif
+  [stderr] centre of mass before: 0.7679 1.9905 -1.0101
+  [stderr] wrote AF-P00918-F1_centered.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit center AF-P00918-F1.cif --atoms ca --geometric -o AF-P00918-F1_ca_centroid0.pdb
+  [stderr] centre of geometry before: 0.9171 2.0585 -0.8412
+  [stderr] wrote AF-P00918-F1_ca_centroid0.pdb
+  -> exit 0 in 0.6s
+
+$ pdbkit split AF-P00918-F1.cif --atoms ca -d split_ca
+split_ca/AF-P00918-F1_A_ca.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit split AF-P00918-F1.cif --atoms backbone -f pdb -d split_backbone
+split_backbone/AF-P00918-F1_A_backbone.pdb
+  -> exit 0 in 0.6s
+
+$ pdbkit extract AF-P00918-F1.cif --residues 1:50 -o AF-P00918-F1_first50.cif
+  [stderr] wrote AF-P00918-F1_first50.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit convert AF-P00918-F1.cif -o AF-P00918-F1_converted.pdb
+  [stderr] wrote AF-P00918-F1_converted.pdb
+  -> exit 0 in 0.6s
+
+$ pdbkit gaps AF-P00918-F1.cif -o gaps.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit ligands AF-P00918-F1.cif -o ligands.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit disulfide AF-P00918-F1.cif -o disulfide.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit closecontacts AF-P00918-F1.cif -o closecontacts.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit neighbors AF-P00918-F1.cif -o neighbors.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit torsion AF-P00918-F1.cif -o torsion.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit sasa AF-P00918-F1.cif -o sasa.tsv
+  -> exit 0 in 1.3s
+
+$ pdbkit watercontacts AF-P00918-F1.cif -o watercontacts.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit param AF-P00918-F1.cif
+residues	260
+molecular_weight	29249.78
+pI	7.413
+fraction_titratable	0.3231
+fraction_acidic	0.1231
+fraction_basic	0.1654
+charge_fully_ionised	11
+composition	{"ALA": 13, "ARG": 7, "ASN": 10, "ASP": 19, "CYS": 1, "GLN": 11, "GLU": 13, "GLY": 22, "HIS": 12, "ILE": 9, "LEU": 26, "LYS": 24, "MET": 2, "PHE": 12, "PRO": 17, "SER": 18, "THR": 12, "TRP": 7, "TYR": 8, "VAL": 17}
+non_standard_residues	[]
+  -> exit 0 in 0.5s
+
+$ pdbkit coulomb AF-P00918-F1.cif
+coulomb_energy_kcal_mol	-21.6346
+  -> exit 0 in 0.6s
+
+$ pdbkit assembly AF-P00918-F1.cif -o assembly.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit centerasu AF-P00918-F1.cif -o x.cif
+  [stderr] pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise.
+  -> exit 2 in 0.6s
+
+$ pdbkit renumber AF-P00918-F1.cif --shift 1000 -o AF-P00918-F1_shift1000.cif
+  [stderr] wrote AF-P00918-F1_shift1000.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit setfield AF-P00918-F1.cif --occupancy 1 -o AF-P00918-F1_occ1.pdb
+  [stderr] wrote AF-P00918-F1_occ1.pdb
+  -> exit 0 in 0.6s
+
+$ pdbkit domains AF-P00918-F1.cif -d domains
+domains/AF-P00918-F1_domain_ss_info.csv
+  [stderr] AF-P00918-F1.cif -> domains/AF-P00918-F1_domain_ss_info.csv
+  -> exit 0 in 1.8s
+
+$ pdbkit hetnavi AF-P00918-F1.cif -d hetnavi
+  [stderr] pdbkit: error: AF-P00918-F1.cif has no 4-character PDB ID (entry ID 'AF-P00918-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one.
+  -> exit 2 in 0.5s
+

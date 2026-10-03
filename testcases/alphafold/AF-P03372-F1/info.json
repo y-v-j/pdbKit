@@ -1,0 +1,24 @@
+{
+  "id": "AF-P03372-F1",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 595,
+  "ligand_residues": 0,
+  "water_molecules": 0,
+  "atoms": 4637,
+  "hetatm_atoms": 0,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {},
+  "exp_title": "NA",
+  "exp_classification": "NA",
+  "exp_organism": "NA",
+  "exp_method": "NA",
+  "exp_resolution": "NA",
+  "exp_r_work": "NA",
+  "exp_r_free": "NA",
+  "input_format": "cif"
+}

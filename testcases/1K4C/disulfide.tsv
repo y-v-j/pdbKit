@@ -1,0 +1,7 @@
+cys1	cys2	distance	state
+A:CYS:22	A:CYS:96	2.724	bonded
+B:CYS:23	B:CYS:88	2.705	bonded
+B:CYS:134	B:CYS:194	2.71	bonded
+A:CYS:145			free
+A:CYS:200			free
+C:CYS:90			free

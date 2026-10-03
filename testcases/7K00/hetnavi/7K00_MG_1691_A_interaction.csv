@@ -1,0 +1,3 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,817,817,C,S,1,0,MG,1691,A,91
+A,818,818,G,S,2,2,MG,1691,A,91

@@ -1,0 +1,4 @@
+target	residue	min_distance
+A:DC:1	A:DG:2	1.599
+A:DC:1	B:DC:23	3.201
+A:DC:1	B:DG:24	2.659

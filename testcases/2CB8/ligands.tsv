@@ -1,0 +1,15 @@
+chain	resname	resseq	icode	atoms
+A	MYA	1088		27
+A	ZN	1089		1
+A	ZN	1090		1
+A	ZN	1091		1
+A	ZN	1092		1
+A	ZN	1093		1
+A	MYA	1094		27
+A	SO4	1095		5
+A	ZN	1096		1
+B	MYA	1088		63
+B	MYA	1089		19
+B	ZN	1090		1
+B	ZN	1091		1
+B	MXE	1092		5

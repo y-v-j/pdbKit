@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,7,107,CYS,S,2,,ZN,201,A,1
+A,12,112,CYS,S,2,,ZN,201,A,1
+A,25,125,HIS,S,3,,ZN,201,A,1
+A,29,129,HIS,S,4,,ZN,201,A,1

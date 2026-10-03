@@ -1,0 +1,26 @@
+{
+  "id": "1VFB",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C"
+  ],
+  "polymer_residues": 352,
+  "ligand_residues": 0,
+  "water_molecules": 48,
+  "atoms": 3456,
+  "hetatm_atoms": 48,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {},
+  "exp_title": "BOUND WATER MOLECULES AND CONFORMATIONAL STABILIZATION HELP MEDIATE AN ANTIGEN-ANTIBODY ASSOCIATION",
+  "exp_classification": "IMMUNOGLOBULIN/HYDROLASE(O-GLYCOSYL)",
+  "exp_organism": "Mus musculus",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.8",
+  "exp_r_work": "0.185",
+  "exp_r_free": "NA",
+  "input_format": "cif"
+}

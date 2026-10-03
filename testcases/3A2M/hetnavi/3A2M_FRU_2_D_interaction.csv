@@ -1,0 +1,10 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,261,261,GLU,S,10,,FRU,2,D,4
+A,264,264,ALA,A,3,,FRU,2,D,4
+A,265,265,ALA,B,2,,FRU,2,D,4
+A,270,270,CYS,B,5,,FRU,2,D,4
+A,271,271,ALA,A,3,,FRU,2,D,4
+A,272,272,LEU,A,8,,FRU,2,D,4
+A,274,274,ARG,S,1,,FRU,2,D,4
+B,54,54,PRO,B,1,,FRU,2,D,4
+B,55,55,VAL,S,1,,FRU,2,D,4

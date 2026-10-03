@@ -1,0 +1,130 @@
+# pdbKit AlphaFold case study: AF-P0DP23-F1 - calmodulin-1, human
+
+$ pdbkit fetch P0DP23 --pae -d .
+./AF-P0DP23-F1.cif
+  -> exit 0 in 0.7s
+
+$ pdbkit fetch P0DP23 -f pdb -d .
+./AF-P0DP23-F1.pdb
+  -> exit 0 in 0.7s
+
+$ pdbkit info AF-P0DP23-F1.cif --table json -o info.json
+  -> exit 0 in 0.5s
+
+$ pdbkit validate AF-P0DP23-F1.cif
+OK: cif file, 1 model(s), 1174 atoms
+  -> exit 0 in 0.6s
+
+$ pdbkit exper AF-P0DP23-F1.cif
+id	AF-P0DP23-F1
+title	NA
+classification	NA
+organism	NA
+method	NA
+resolution	NA
+r_work	NA
+r_free	NA
+  -> exit 0 in 0.5s
+
+$ pdbkit fasta AF-P0DP23-F1.cif -d .
+./AF-P0DP23-F1.fasta
+  -> exit 0 in 0.6s
+
+$ pdbkit com AF-P0DP23-F1.cif
+x	0.6514
+y	-2.0628
+z	1.2047
+weighting	mass
+radius_of_gyration	20.9347
+  -> exit 0 in 0.5s
+
+$ pdbkit center AF-P0DP23-F1.cif -o AF-P0DP23-F1_centered.cif
+  [stderr] centre of mass before: 0.6514 -2.0628 1.2047
+  [stderr] wrote AF-P0DP23-F1_centered.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit center AF-P0DP23-F1.cif --atoms ca --geometric -o AF-P0DP23-F1_ca_centroid0.pdb
+  [stderr] centre of geometry before: 0.8579 -2.0124 0.9790
+  [stderr] wrote AF-P0DP23-F1_ca_centroid0.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit split AF-P0DP23-F1.cif --atoms ca -d split_ca
+split_ca/AF-P0DP23-F1_A_ca.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit split AF-P0DP23-F1.cif --atoms backbone -f pdb -d split_backbone
+split_backbone/AF-P0DP23-F1_A_backbone.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit extract AF-P0DP23-F1.cif --residues 1:50 -o AF-P0DP23-F1_first50.cif
+  [stderr] wrote AF-P0DP23-F1_first50.cif
+  -> exit 0 in 0.5s
+
+$ pdbkit convert AF-P0DP23-F1.cif -o AF-P0DP23-F1_converted.pdb
+  [stderr] wrote AF-P0DP23-F1_converted.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit gaps AF-P0DP23-F1.cif -o gaps.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit ligands AF-P0DP23-F1.cif -o ligands.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit disulfide AF-P0DP23-F1.cif -o disulfide.tsv
+  -> exit 0 in 0.6s
+
+$ pdbkit closecontacts AF-P0DP23-F1.cif -o closecontacts.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit neighbors AF-P0DP23-F1.cif -o neighbors.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit torsion AF-P0DP23-F1.cif -o torsion.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit sasa AF-P0DP23-F1.cif -o sasa.tsv
+  -> exit 0 in 0.9s
+
+$ pdbkit watercontacts AF-P0DP23-F1.cif -o watercontacts.tsv
+  -> exit 0 in 0.7s
+
+$ pdbkit param AF-P0DP23-F1.cif
+residues	149
+molecular_weight	16839.69
+pI	4.032
+fraction_titratable	0.3691
+fraction_acidic	0.255
+fraction_basic	0.1007
+charge_fully_ionised	-23
+composition	{"ALA": 11, "ARG": 6, "ASN": 6, "ASP": 17, "GLN": 6, "GLU": 21, "GLY": 11, "HIS": 1, "ILE": 8, "LEU": 9, "LYS": 8, "MET": 10, "PHE": 8, "PRO": 2, "SER": 4, "THR": 12, "TYR": 2, "VAL": 7}
+non_standard_residues	[]
+  -> exit 0 in 0.5s
+
+$ pdbkit coulomb AF-P0DP23-F1.cif
+coulomb_energy_kcal_mol	19.3327
+  -> exit 0 in 0.5s
+
+$ pdbkit assembly AF-P0DP23-F1.cif -o assembly.tsv
+  -> exit 0 in 0.5s
+
+$ pdbkit centerasu AF-P0DP23-F1.cif -o x.cif
+  [stderr] pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise.
+  -> exit 2 in 0.5s
+
+$ pdbkit renumber AF-P0DP23-F1.cif --shift 1000 -o AF-P0DP23-F1_shift1000.cif
+  [stderr] wrote AF-P0DP23-F1_shift1000.cif
+  -> exit 0 in 0.6s
+
+$ pdbkit setfield AF-P0DP23-F1.cif --occupancy 1 -o AF-P0DP23-F1_occ1.pdb
+  [stderr] wrote AF-P0DP23-F1_occ1.pdb
+  -> exit 0 in 0.5s
+
+$ pdbkit domains AF-P0DP23-F1.cif -d domains
+domains/AF-P0DP23-F1_domain_ss_info.csv
+  [stderr] AF-P0DP23-F1.cif -> domains/AF-P0DP23-F1_domain_ss_info.csv
+  -> exit 0 in 1.8s
+
+$ pdbkit hetnavi AF-P0DP23-F1.cif -d hetnavi
+  [stderr] pdbkit: error: AF-P0DP23-F1.cif has no 4-character PDB ID (entry ID 'AF-P0DP23-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one.
+  -> exit 2 in 0.5s
+

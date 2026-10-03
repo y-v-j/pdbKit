@@ -1,0 +1,30 @@
+{
+  "id": "2F9Q",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "polymer_residues": 1810,
+  "ligand_residues": 6,
+  "water_molecules": 11,
+  "atoms": 14421,
+  "hetatm_atoms": 193,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": true,
+  "ligands": {
+    "HEM": 4,
+    "SO4": 2
+  },
+  "exp_title": "Crystal Structure of Human Cytochrome P450 2D6",
+  "exp_classification": "OXIDOREDUCTASE",
+  "exp_organism": "Homo sapiens",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "3.002",
+  "exp_r_work": "0.2297",
+  "exp_r_free": "0.28607",
+  "input_format": "cif"
+}

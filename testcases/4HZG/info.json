@@ -1,0 +1,26 @@
+{
+  "id": "4HZG",
+  "models": 1,
+  "chains": [
+    "A"
+  ],
+  "polymer_residues": 294,
+  "ligand_residues": 1,
+  "water_molecules": 226,
+  "atoms": 2642,
+  "hetatm_atoms": 230,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "CL": 1
+  },
+  "exp_title": "Structure of haloalkane dehalogenase DhaA from Rhodococcus rhodochrous",
+  "exp_classification": "HYDROLASE",
+  "exp_organism": "Rhodococcus sp.",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.95",
+  "exp_r_work": "0.21558",
+  "exp_r_free": "0.27287",
+  "input_format": "cif"
+}

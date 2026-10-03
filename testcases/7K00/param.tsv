@@ -1,0 +1,9 @@
+residues	5587
+molecular_weight	621099.93
+pI	10.745
+fraction_titratable	0.342
+fraction_acidic	0.0992
+fraction_basic	0.2173
+charge_fully_ionised	660
+composition	{"4D4": 1, "ALA": 553, "ARG": 542, "ASN": 200, "ASP": 229, "CYS": 32, "D2T": 1, "GLN": 186, "GLU": 325, "GLY": 456, "HIS": 133, "IAS": 1, "ILE": 324, "LEU": 392, "LYS": 539, "MEQ": 1, "MET": 114, "MS6": 1, "PHE": 169, "PRO": 188, "SER": 251, "THR": 295, "TRP": 32, "TYR": 111, "VAL": 511}
+non_standard_residues	["4D4", "D2T", "IAS", "MEQ", "MS6"]

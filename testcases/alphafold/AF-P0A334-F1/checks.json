@@ -1,0 +1,325 @@
+{
+  "id": "AF-P0A334-F1",
+  "description": "KcsA potassium channel (1K4C)",
+  "commands": [
+    {
+      "label": "fetch_cif",
+      "cmd": "pdbkit fetch P0A334 --pae -d .",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.65,
+      "stderr": ""
+    },
+    {
+      "label": "fetch_pdb",
+      "cmd": "pdbkit fetch P0A334 -f pdb -d .",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.63,
+      "stderr": ""
+    },
+    {
+      "label": "info",
+      "cmd": "pdbkit info AF-P0A334-F1.cif --table json -o info.json",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.48,
+      "stderr": ""
+    },
+    {
+      "label": "validate",
+      "cmd": "pdbkit validate AF-P0A334-F1.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.52,
+      "stderr": ""
+    },
+    {
+      "label": "exper",
+      "cmd": "pdbkit exper AF-P0A334-F1.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": ""
+    },
+    {
+      "label": "fasta",
+      "cmd": "pdbkit fasta AF-P0A334-F1.cif -d .",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": ""
+    },
+    {
+      "label": "com",
+      "cmd": "pdbkit com AF-P0A334-F1.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.49,
+      "stderr": ""
+    },
+    {
+      "label": "center",
+      "cmd": "pdbkit center AF-P0A334-F1.cif -o AF-P0A334-F1_centered.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.54,
+      "stderr": "centre of mass before: 8.0925 6.2332 -7.5481\nwrote AF-P0A334-F1_centered.cif"
+    },
+    {
+      "label": "center_ca_pdb",
+      "cmd": "pdbkit center AF-P0A334-F1.cif --atoms ca --geometric -o AF-P0A334-F1_ca_centroid0.pdb",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": "centre of geometry before: 6.4567 5.6805 -6.1875\nwrote AF-P0A334-F1_ca_centroid0.pdb"
+    },
+    {
+      "label": "split_ca",
+      "cmd": "pdbkit split AF-P0A334-F1.cif --atoms ca -d split_ca",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": ""
+    },
+    {
+      "label": "split_backbone_pdb",
+      "cmd": "pdbkit split AF-P0A334-F1.cif --atoms backbone -f pdb -d split_backbone",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.53,
+      "stderr": ""
+    },
+    {
+      "label": "extract_range",
+      "cmd": "pdbkit extract AF-P0A334-F1.cif --residues 1:50 -o AF-P0A334-F1_first50.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": "wrote AF-P0A334-F1_first50.cif"
+    },
+    {
+      "label": "convert_pdb",
+      "cmd": "pdbkit convert AF-P0A334-F1.cif -o AF-P0A334-F1_converted.pdb",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.5,
+      "stderr": "wrote AF-P0A334-F1_converted.pdb"
+    },
+    {
+      "label": "gaps",
+      "cmd": "pdbkit gaps AF-P0A334-F1.cif -o gaps.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.48,
+      "stderr": ""
+    },
+    {
+      "label": "ligands",
+      "cmd": "pdbkit ligands AF-P0A334-F1.cif -o ligands.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.5,
+      "stderr": ""
+    },
+    {
+      "label": "disulfide",
+      "cmd": "pdbkit disulfide AF-P0A334-F1.cif -o disulfide.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.5,
+      "stderr": ""
+    },
+    {
+      "label": "closecontacts",
+      "cmd": "pdbkit closecontacts AF-P0A334-F1.cif -o closecontacts.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.52,
+      "stderr": ""
+    },
+    {
+      "label": "neighbors",
+      "cmd": "pdbkit neighbors AF-P0A334-F1.cif -o neighbors.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.59,
+      "stderr": ""
+    },
+    {
+      "label": "torsion",
+      "cmd": "pdbkit torsion AF-P0A334-F1.cif -o torsion.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.54,
+      "stderr": ""
+    },
+    {
+      "label": "sasa",
+      "cmd": "pdbkit sasa AF-P0A334-F1.cif -o sasa.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.85,
+      "stderr": ""
+    },
+    {
+      "label": "watercontacts",
+      "cmd": "pdbkit watercontacts AF-P0A334-F1.cif -o watercontacts.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.62,
+      "stderr": ""
+    },
+    {
+      "label": "param",
+      "cmd": "pdbkit param AF-P0A334-F1.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.49,
+      "stderr": ""
+    },
+    {
+      "label": "coulomb",
+      "cmd": "pdbkit coulomb AF-P0A334-F1.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.48,
+      "stderr": ""
+    },
+    {
+      "label": "assembly",
+      "cmd": "pdbkit assembly AF-P0A334-F1.cif -o assembly.tsv",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.5,
+      "stderr": ""
+    },
+    {
+      "label": "centerasu (no crystal cell)",
+      "cmd": "pdbkit centerasu AF-P0A334-F1.cif -o x.cif",
+      "rc": 2,
+      "expected": 2,
+      "ok": true,
+      "seconds": 0.56,
+      "stderr": "pdbkit: error: No SCALE records, _atom_sites matrix or unit cell: cannot fractionalise."
+    },
+    {
+      "label": "renumber",
+      "cmd": "pdbkit renumber AF-P0A334-F1.cif --shift 1000 -o AF-P0A334-F1_shift1000.cif",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.53,
+      "stderr": "wrote AF-P0A334-F1_shift1000.cif"
+    },
+    {
+      "label": "setfield",
+      "cmd": "pdbkit setfield AF-P0A334-F1.cif --occupancy 1 -o AF-P0A334-F1_occ1.pdb",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": "wrote AF-P0A334-F1_occ1.pdb"
+    },
+    {
+      "label": "domains_live",
+      "cmd": "pdbkit domains AF-P0A334-F1.cif -d domains",
+      "rc": 0,
+      "expected": 0,
+      "ok": true,
+      "seconds": 1.17,
+      "stderr": "AF-P0A334-F1.cif -> domains/AF-P0A334-F1_domain_ss_info.csv"
+    },
+    {
+      "label": "hetnavi (not a PDB entry)",
+      "cmd": "pdbkit hetnavi AF-P0A334-F1.cif -d hetnavi",
+      "rc": 2,
+      "expected": 2,
+      "ok": true,
+      "seconds": 0.51,
+      "stderr": "pdbkit: error: AF-P0A334-F1.cif has no 4-character PDB ID (entry ID 'AF-P0A334-F1'). Het-PDB Navi covers PDB entries only - predicted models (AlphaFold) have no interaction data there. Pass a PDB ID if the file is a copy of one."
+    }
+  ],
+  "checks": {
+    "all_outputs_read_by_gemmi_and_pymol": {
+      "ok": true,
+      "detail": "10 files; failures []"
+    },
+    "gemmi_and_pymol_agree_on_atom_counts": {
+      "ok": true,
+      "detail": "[]"
+    },
+    "model_sequence_equals_uniprot": {
+      "ok": true,
+      "detail": "model 160 aa, UniProt 160 aa, FASTA file 160 aa"
+    },
+    "afdb_api_sequence_equals_model": {
+      "ok": true,
+      "detail": "AFDB API latestVersion 6"
+    },
+    "pae_is_L_by_L": {
+      "ok": true,
+      "detail": "PAE (160, 160), max 31.75"
+    },
+    "plddt_preserved_in_bfactor": {
+      "ok": true,
+      "detail": "mean pLDDT 89.6; AFDB global 89.62"
+    },
+    "mean_plddt_equals_afdb_global": {
+      "ok": true,
+      "detail": "89.63 vs 89.62"
+    },
+    "pdb_and_cif_downloads_identical_atoms": {
+      "ok": true,
+      "detail": ""
+    },
+    "centered_com_zero_gemmi": {
+      "ok": true,
+      "detail": "|COM| 0.00052 A"
+    },
+    "ca_centroid_zero": {
+      "ok": true,
+      "detail": "0.00056 A"
+    },
+    "no_gaps_no_ligands": {
+      "ok": true,
+      "detail": ""
+    },
+    "domains_finds_uniprot": {
+      "ok": true,
+      "detail": "accession P0A334, family Belongs to the potassium channel family"
+    },
+    "all_outputs_validate": {
+      "ok": true,
+      "detail": "[]"
+    },
+    "all_commands_exit_as_expected": {
+      "ok": true,
+      "detail": ""
+    }
+  }
+}

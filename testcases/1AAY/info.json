@@ -1,0 +1,28 @@
+{
+  "id": "1AAY",
+  "models": 1,
+  "chains": [
+    "B",
+    "C",
+    "A"
+  ],
+  "polymer_residues": 107,
+  "ligand_residues": 3,
+  "water_molecules": 148,
+  "atoms": 1330,
+  "hetatm_atoms": 151,
+  "has_altlocs": true,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "ZN": 3
+  },
+  "exp_title": "ZIF268 ZINC FINGER-DNA COMPLEX",
+  "exp_classification": "TRANSCRIPTION/DNA",
+  "exp_organism": "Mus musculus",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "1.600",
+  "exp_r_work": "0.1950000",
+  "exp_r_free": "0.2420000",
+  "input_format": "cif"
+}

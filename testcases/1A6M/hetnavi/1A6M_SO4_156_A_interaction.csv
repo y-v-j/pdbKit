@@ -1,0 +1,3 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,26,26,GLN,S,3,2,SO4,156,A,2
+A,62,62,LYS,S,5,2,SO4,156,A,2

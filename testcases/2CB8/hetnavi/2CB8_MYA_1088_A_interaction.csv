@@ -1,0 +1,9 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+A,10,10,ALA,A,3,,MYA,1088,A,1
+A,14,14,ARG,S,3,,MYA,1088,A,1
+A,28,28,ILE,A,4,,MYA,1088,A,1
+A,29,29,TYR,A,12,,MYA,1088,A,1
+A,32,32,TYR,S,20,,MYA,1088,A,1
+A,33,33,LYS,S,3,,MYA,1088,A,1
+A,55,55,LYS,S,2,,MYA,1088,A,1
+A,74,74,TYR,S,7,,MYA,1088,A,1

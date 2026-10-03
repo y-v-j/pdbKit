@@ -1,0 +1,103 @@
+data_7K00
+#
+_entry.id 7K00
+#
+loop_
+_entity.id
+_entity.type
+_entity.pdbx_description
+1 polymer 'E-site tRNA'
+#
+loop_
+_entity_poly.entity_id
+_entity_poly.type
+_entity_poly.nstd_linkage
+_entity_poly.pdbx_strand_id
+1 polyribonucleotide no 5
+#
+loop_
+_struct_asym.id
+_struct_asym.pdbx_blank_PDB_chainid_flag
+_struct_asym.pdbx_modified
+_struct_asym.entity_id
+_struct_asym.details
+A N N 1 ?
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+A 'RNA linking'
+C 'RNA linking'
+#
+loop_
+_atom_type.symbol
+C
+N
+O
+P
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+ATOM 1 P P . C A 1 1 ? 188.952 170.894 127.416 1.00 37.04 ? 75 C 5 P 1
+ATOM 2 O OP1 . C A 1 1 ? 190.376 171.204 127.112 1.00 37.04 ? 75 C 5 OP1 1
+ATOM 3 O OP2 . C A 1 1 ? 187.913 171.130 126.379 1.00 37.04 ? 75 C 5 OP2 1
+ATOM 4 O "O5'" . C A 1 1 ? 188.853 169.376 127.898 1.00 37.04 ? 75 C 5 "O5'" 1
+ATOM 5 C "C5'" . C A 1 1 ? 189.904 168.774 128.677 1.00 37.04 ? 75 C 5 "C5'" 1
+ATOM 6 C "C4'" . C A 1 1 ? 190.276 167.430 128.091 1.00 37.04 ? 75 C 5 "C4'" 1
+ATOM 7 O "O4'" . C A 1 1 ? 189.109 166.558 128.113 1.00 37.04 ? 75 C 5 "O4'" 1
+ATOM 8 C "C3'" . C A 1 1 ? 190.765 167.463 126.642 1.00 37.04 ? 75 C 5 "C3'" 1
+ATOM 9 O "O3'" . C A 1 1 ? 191.905 166.623 126.472 1.00 37.04 ? 75 C 5 "O3'" 1
+ATOM 10 C "C2'" . C A 1 1 ? 189.553 166.971 125.848 1.00 37.04 ? 75 C 5 "C2'" 1
+ATOM 11 O "O2'" . C A 1 1 ? 189.894 166.308 124.644 1.00 37.04 ? 75 C 5 "O2'" 1
+ATOM 12 C "C1'" . C A 1 1 ? 188.923 165.987 126.834 1.00 37.04 ? 75 C 5 "C1'" 1
+ATOM 13 N N1 . C A 1 1 ? 187.479 165.792 126.621 1.00 37.04 ? 75 C 5 N1 1
+ATOM 14 C C2 . C A 1 1 ? 187.022 164.538 126.202 1.00 37.04 ? 75 C 5 C2 1
+ATOM 15 O O2 . C A 1 1 ? 187.848 163.627 126.025 1.00 37.04 ? 75 C 5 O2 1
+ATOM 16 N N3 . C A 1 1 ? 185.694 164.350 126.001 1.00 37.04 ? 75 C 5 N3 1
+ATOM 17 C C4 . C A 1 1 ? 184.837 165.357 126.204 1.00 37.04 ? 75 C 5 C4 1
+ATOM 18 N N4 . C A 1 1 ? 183.536 165.126 125.993 1.00 37.04 ? 75 C 5 N4 1
+ATOM 19 C C5 . C A 1 1 ? 185.278 166.646 126.632 1.00 37.04 ? 75 C 5 C5 1
+ATOM 20 C C6 . C A 1 1 ? 186.594 166.820 126.825 1.00 37.04 ? 75 C 5 C6 1
+ATOM 21 P P . A A 1 2 ? 193.251 167.233 125.851 1.00 25.79 ? 76 A 5 P 1
+ATOM 22 O OP1 . A A 1 2 ? 193.535 168.516 126.547 1.00 25.79 ? 76 A 5 OP1 1
+ATOM 23 O OP2 . A A 1 2 ? 193.116 167.218 124.370 1.00 25.79 ? 76 A 5 OP2 1
+ATOM 24 O "O5'" . A A 1 2 ? 194.372 166.177 126.277 1.00 25.79 ? 76 A 5 "O5'" 1
+ATOM 25 C "C5'" . A A 1 2 ? 194.033 164.891 126.842 1.00 25.79 ? 76 A 5 "C5'" 1
+ATOM 26 C "C4'" . A A 1 2 ? 194.917 163.810 126.252 1.00 25.79 ? 76 A 5 "C4'" 1
+ATOM 27 O "O4'" . A A 1 2 ? 196.310 164.228 126.312 1.00 25.79 ? 76 A 5 "O4'" 1
+ATOM 28 C "C3'" . A A 1 2 ? 194.844 162.440 126.939 1.00 25.79 ? 76 A 5 "C3'" 1
+ATOM 29 O "O3'" . A A 1 2 ? 194.727 161.404 125.968 1.00 25.79 ? 76 A 5 "O3'" 1
+ATOM 30 C "C2'" . A A 1 2 ? 196.173 162.344 127.695 1.00 25.79 ? 76 A 5 "C2'" 1
+ATOM 31 O "O2'" . A A 1 2 ? 196.652 161.016 127.806 1.00 25.79 ? 76 A 5 "O2'" 1
+ATOM 32 C "C1'" . A A 1 2 ? 197.101 163.160 126.795 1.00 25.79 ? 76 A 5 "C1'" 1
+ATOM 33 N N9 . A A 1 2 ? 198.253 163.725 127.502 1.00 25.79 ? 76 A 5 N9 1
+ATOM 34 C C8 . A A 1 2 ? 198.307 164.903 128.211 1.00 25.79 ? 76 A 5 C8 1
+ATOM 35 N N7 . A A 1 2 ? 199.484 165.150 128.741 1.00 25.79 ? 76 A 5 N7 1
+ATOM 36 C C5 . A A 1 2 ? 200.258 164.061 128.355 1.00 25.79 ? 76 A 5 C5 1
+ATOM 37 C C6 . A A 1 2 ? 201.605 163.721 128.596 1.00 25.79 ? 76 A 5 C6 1
+ATOM 38 N N6 . A A 1 2 ? 202.445 164.477 129.313 1.00 25.79 ? 76 A 5 N6 1
+ATOM 39 N N1 . A A 1 2 ? 202.066 162.563 128.068 1.00 25.79 ? 76 A 5 N1 1
+ATOM 40 C C2 . A A 1 2 ? 201.223 161.805 127.349 1.00 25.79 ? 76 A 5 C2 1
+ATOM 41 N N3 . A A 1 2 ? 199.939 162.016 127.055 1.00 25.79 ? 76 A 5 N3 1
+ATOM 42 C C4 . A A 1 2 ? 199.513 163.175 127.593 1.00 25.79 ? 76 A 5 C4 1
+#

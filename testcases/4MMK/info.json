@@ -1,0 +1,40 @@
+{
+  "id": "4MMK",
+  "models": 1,
+  "chains": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "polymer_residues": 826,
+  "ligand_residues": 35,
+  "water_molecules": 318,
+  "atoms": 6928,
+  "hetatm_atoms": 357,
+  "has_altlocs": false,
+  "has_insertion_codes": false,
+  "has_sequence_gaps": false,
+  "ligands": {
+    "ZN": 23,
+    "K": 8,
+    "NA": 3,
+    "SO4": 1
+  },
+  "exp_title": "Q8A Hfq from Pseudomonas aeruginosa",
+  "exp_classification": "RNA BINDING PROTEIN",
+  "exp_organism": "Pseudomonas aeruginosa",
+  "exp_method": "X-RAY DIFFRACTION",
+  "exp_resolution": "2.156",
+  "exp_r_work": "0.2162",
+  "exp_r_free": "0.2562",
+  "input_format": "cif"
+}

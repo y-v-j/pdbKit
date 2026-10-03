@@ -1,0 +1,38 @@
+ID	1EHZA	STANDARD;	PRT;	76	AA.
+DT	CONVERTED FROM PDB (SEQRES) 1EHZ
+DE	TRANSFER RNA (PHE)
+OS	Saccharomyces cerevisiae
+CC	EXPDTA	X-RAY DIFFRACTION
+CC	RESOLU	1.930
+CC	R-Factor	0.233
+FT	#HET	1	   1 	G	A	4	520 	MN	A	S	5
+FT	#HET	3	   3 	G	A	3	510 	MG	A	S	1
+FT	#HET	7	   7 	U	A	8	580 	MG	A	S	2
+FT	#HET	8	   8 	U	A	6	560 	MG	A	S	1
+FT	#HET	8	   8 	U	A	8	580 	MG	A	S	1
+FT	#HET	12	  12 	U	A	6	560 	MG	A	S	1
+FT	#HET	13	  13 	C	A	8	580 	MG	A	S	2
+FT	#HET	14	  14 	A	A	8	580 	MG	A	S	3
+FT	#HET	15	  15 	G	A	9	550 	MN	A	S	5
+FT	#HET	16	  16 	H2U	A	2	530 	MN	A	S	3
+FT	#HET	19	  19 	G	A	2	530 	MN	A	S	3
+FT	#HET	20	  20 	G	A	2	530 	MN	A	S	1
+FT	#HET	20	  20 	G	A	5	540 	MG	A	S	2
+FT	#HET	21	  21 	A	A	5	540 	MG	A	S	2
+FT	#HET	37	  37 	YYG	A	1	590 	MG	A	S	5
+FT	#HET	38	  38 	A	A	1	590 	MG	A	S	4
+CC	SEQUENCE	76 AA (ATOM);
+CC	gcggauuuaX cucagXXggg agagcXccag aXuXaaXaXX uggagXucXu gugXXcgXuc
+CC	cacagaauuc gcacca
+CC	!----
+CC	ALIGNMENT OF SEQRES AND ATOMRES
+CC	SEQRES gcggauuuaXcucagXXgggagagcXccagaXuXaaXaXXuggagXucXu
+CC	ATOM   gcggauuuaXcucagXXgggagagcXccagaXuXaaXaXXuggagXucXu
+CC	       **************************************************
+CC	SEQRES gugXXcgXuccacagaauucgcacca
+CC	ATOM   gugXXcgXuccacagaauucgcacca
+CC	       **************************
+SQ	SEQUENCE	76 AA;      MW;         CN;
+	gcggauuuaX cucagXXggg agagcXccag aXuXaaXaXX uggagXucXu gugXXcgXuc
+	cacagaauuc gcacca
+//

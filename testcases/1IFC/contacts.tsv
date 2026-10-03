@@ -1,0 +1,5 @@
+target	residue	min_distance
+A:ALA:1	A:PHE:2	1.356
+A:ALA:1	A:ASP:3	3.474
+A:ALA:1	A:TRP:6	3.821
+A:ALA:1	A:ILE:108	3.741

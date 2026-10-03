@@ -1,0 +1,36 @@
+cys1	cys2	distance	state
+A:CYS:31	A:CYS:58	2.029	bonded
+A:CYS:157	A:CYS:187	2.036	bonded
+A:CYS:190	A:CYS:199	2.025	bonded
+A:CYS:194	A:CYS:207	2.038	bonded
+A:CYS:215	A:CYS:223	2.031	bonded
+A:CYS:219	A:CYS:231	2.038	bonded
+A:CYS:232	A:CYS:240	2.032	bonded
+A:CYS:236	A:CYS:248	2.036	bonded
+A:CYS:251	A:CYS:260	2.033	bonded
+A:CYS:264	A:CYS:291	2.042	bonded
+A:CYS:295	A:CYS:307	2.031	bonded
+A:CYS:311	A:CYS:326	2.039	bonded
+A:CYS:329	A:CYS:333	2.038	bonded
+A:CYS:337	A:CYS:362	2.011	bonded
+A:CYS:470	A:CYS:499	2.028	bonded
+A:CYS:506	A:CYS:515	2.034	bonded
+A:CYS:510	A:CYS:523	2.036	bonded
+A:CYS:526	A:CYS:535	2.035	bonded
+A:CYS:539	A:CYS:555	2.033	bonded
+A:CYS:558	A:CYS:571	2.037	bonded
+A:CYS:562	A:CYS:579	2.032	bonded
+A:CYS:582	A:CYS:591	2.031	bonded
+A:CYS:595	A:CYS:617	2.036	bonded
+A:CYS:620	A:CYS:628	2.029	bonded
+A:CYS:624	A:CYS:636	2.021	bonded
+A:CYS:19			free
+A:CYS:775			free
+A:CYS:781			free
+A:CYS:797			free
+A:CYS:818			free
+A:CYS:939			free
+A:CYS:950			free
+A:CYS:1049			free
+A:CYS:1058			free
+A:CYS:1146			free

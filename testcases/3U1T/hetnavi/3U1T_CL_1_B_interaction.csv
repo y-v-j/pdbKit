@@ -1,0 +1,5 @@
+protein_chain,res_start,res_end,res_name,contact_type,num_contacts,num_hbonds,het_code,het_resnum,het_chain,het_index
+B,281,321,HIS,B,3,,CL,1,B,4
+B,282,322,PRO,A,2,,CL,1,B,4
+B,283,323,HIS,A,4,,CL,1,B,4
+B,284,324,LEU,B,1,,CL,1,B,4

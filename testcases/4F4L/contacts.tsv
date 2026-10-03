@@ -1,0 +1,5 @@
+target	residue	min_distance
+A:SER:8	A:VAL:9	1.364
+A:SER:8	A:ALA:10	3.329
+A:SER:8	A:ALA:11	3.376
+A:SER:8	A:LEU:12	3.846

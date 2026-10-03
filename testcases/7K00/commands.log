@@ -1,0 +1,332 @@
+# pdbKit case study: 7K00  (input: /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif)
+# every command below was run in /var/home/kestrel/Projects/potential_projects/github-new/pdbKit/testcases/7K00
+
+$ pdbkit info /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --table json -o info.json
+  -> exit 0 in 8.0s
+
+$ pdbkit validate /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif
+OK: cif file, 1 model(s), 149338 atoms
+  -> exit 0 in 12.7s
+
+$ pdbkit exper /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif
+id	7K00
+title	Structure of the Bacterial Ribosome at 2 Angstrom Resolution
+classification	RIBOSOME
+organism	Escherichia coli
+method	ELECTRON MICROSCOPY
+resolution	1.98
+r_work	NA
+r_free	NA
+  -> exit 0 in 7.7s
+
+$ pdbkit assembly /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o assembly.tsv
+  -> exit 0 in 7.7s
+
+$ pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -d .
+./7k00.fasta
+  -> exit 0 in 7.9s
+
+$ pdbkit fasta /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --source atom -o 7K00_modelled.fasta
+7K00_modelled.fasta
+  -> exit 0 in 7.8s
+
+$ pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif
+x	176.5646
+y	175.9306
+z	178.6006
+weighting	mass
+radius_of_gyration	82.7297
+  -> exit 0 in 8.0s
+
+$ pdbkit com /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -c A --atoms ca --geometric
+x	190.4541
+y	228.6918
+z	200.4445
+weighting	geometric
+radius_of_gyration	51.3126
+  -> exit 0 in 9.5s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o 7K00_centered.cif
+  [stderr] centre of mass before: 176.5646 175.9306 178.6006
+  [stderr] wrote 7K00_centered.cif
+  -> exit 0 in 13.6s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -c A --keep-all -o 7K00_chainA_com0.cif
+  [stderr] centre of mass before: 181.7142 225.7466 213.2053
+  [stderr] wrote 7K00_chainA_com0.cif
+  -> exit 0 in 14.3s
+
+$ pdbkit center /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -c A --het none --no-water -o 7K00_chainA_protein_centered.cif
+  [stderr] centre of mass before: 181.0465 225.5159 214.1794
+  [stderr] wrote 7K00_chainA_protein_centered.cif
+  -> exit 0 in 10.3s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --atoms ca -d split_ca
+split_ca/7k00_B_ca.cif
+split_ca/7k00_C_ca.cif
+split_ca/7k00_D_ca.cif
+split_ca/7k00_E_ca.cif
+split_ca/7k00_F_ca.cif
+split_ca/7k00_G_ca.cif
+split_ca/7k00_H_ca.cif
+split_ca/7k00_I_ca.cif
+split_ca/7k00_J_ca.cif
+split_ca/7k00_K_ca.cif
+split_ca/7k00_L_ca.cif
+split_ca/7k00_M_ca.cif
+split_ca/7k00_N_ca.cif
+split_ca/7k00_O_ca.cif
+split_ca/7k00_P_ca.cif
+split_ca/7k00_Q_ca.cif
+split_ca/7k00_R_ca.cif
+split_ca/7k00_S_ca.cif
+split_ca/7k00_T_ca.cif
+split_ca/7k00_U_ca.cif
+split_ca/7k00_c_ca.cif
+split_ca/7k00_d_ca.cif
+split_ca/7k00_e_ca.cif
+split_ca/7k00_f_ca.cif
+split_ca/7k00_g_ca.cif
+... (24 more lines)
+  [stderr] pdbKit: chain 'A' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'a' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'b' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'X' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'Y' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'Z' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain '5' has no atoms matching the selection - skipped
+  -> exit 0 in 11.7s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --atoms ca --het all -d split_ca_het
+split_ca_het/7k00_A_ca_het.cif
+split_ca_het/7k00_B_ca_het.cif
+split_ca_het/7k00_C_ca_het.cif
+split_ca_het/7k00_D_ca_het.cif
+split_ca_het/7k00_E_ca_het.cif
+split_ca_het/7k00_F_ca_het.cif
+split_ca_het/7k00_G_ca_het.cif
+split_ca_het/7k00_H_ca_het.cif
+split_ca_het/7k00_I_ca_het.cif
+split_ca_het/7k00_J_ca_het.cif
+split_ca_het/7k00_K_ca_het.cif
+split_ca_het/7k00_L_ca_het.cif
+split_ca_het/7k00_M_ca_het.cif
+split_ca_het/7k00_N_ca_het.cif
+split_ca_het/7k00_O_ca_het.cif
+split_ca_het/7k00_P_ca_het.cif
+split_ca_het/7k00_Q_ca_het.cif
+split_ca_het/7k00_R_ca_het.cif
+split_ca_het/7k00_S_ca_het.cif
+split_ca_het/7k00_T_ca_het.cif
+split_ca_het/7k00_U_ca_het.cif
+split_ca_het/7k00_a_ca_het.cif
+split_ca_het/7k00_b_ca_het.cif
+split_ca_het/7k00_c_ca_het.cif
+split_ca_het/7k00_d_ca_het.cif
+... (27 more lines)
+  [stderr] pdbKit: chain 'X' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'Y' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'Z' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain '5' has no atoms matching the selection - skipped
+  -> exit 0 in 12.1s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --het all --water -d split_all_atom_het_water
+split_all_atom_het_water/7k00_A_all_het_wat.cif
+split_all_atom_het_water/7k00_B_all_het_wat.cif
+split_all_atom_het_water/7k00_C_all_het_wat.cif
+split_all_atom_het_water/7k00_D_all_het_wat.cif
+split_all_atom_het_water/7k00_E_all_het_wat.cif
+split_all_atom_het_water/7k00_F_all_het_wat.cif
+split_all_atom_het_water/7k00_G_all_het_wat.cif
+split_all_atom_het_water/7k00_H_all_het_wat.cif
+split_all_atom_het_water/7k00_I_all_het_wat.cif
+split_all_atom_het_water/7k00_J_all_het_wat.cif
+split_all_atom_het_water/7k00_K_all_het_wat.cif
+split_all_atom_het_water/7k00_L_all_het_wat.cif
+split_all_atom_het_water/7k00_M_all_het_wat.cif
+split_all_atom_het_water/7k00_N_all_het_wat.cif
+split_all_atom_het_water/7k00_O_all_het_wat.cif
+split_all_atom_het_water/7k00_P_all_het_wat.cif
+split_all_atom_het_water/7k00_Q_all_het_wat.cif
+split_all_atom_het_water/7k00_R_all_het_wat.cif
+split_all_atom_het_water/7k00_S_all_het_wat.cif
+split_all_atom_het_water/7k00_T_all_het_wat.cif
+split_all_atom_het_water/7k00_U_all_het_wat.cif
+split_all_atom_het_water/7k00_a_all_het_wat.cif
+split_all_atom_het_water/7k00_b_all_het_wat.cif
+split_all_atom_het_water/7k00_c_all_het_wat.cif
+split_all_atom_het_water/7k00_d_all_het_wat.cif
+... (31 more lines)
+  -> exit 0 in 12.9s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -c A,B --het PAR -d split_selected
+split_selected/7k00_A_all_het-PAR.cif
+split_selected/7k00_B_all_het-PAR.cif
+  -> exit 0 in 10.4s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -c A,B --atoms ca --het PAR -f pdb -d split_selected
+split_selected/7k00_A_ca_het-PAR.pdb
+split_selected/7k00_B_ca_het-PAR.pdb
+  -> exit 0 in 8.7s
+
+$ pdbkit split /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --atoms ca -f pdb -d split_ca_pdb
+split_ca_pdb/7k00_B_ca.pdb
+split_ca_pdb/7k00_C_ca.pdb
+split_ca_pdb/7k00_D_ca.pdb
+split_ca_pdb/7k00_E_ca.pdb
+split_ca_pdb/7k00_F_ca.pdb
+split_ca_pdb/7k00_G_ca.pdb
+split_ca_pdb/7k00_H_ca.pdb
+split_ca_pdb/7k00_I_ca.pdb
+split_ca_pdb/7k00_J_ca.pdb
+split_ca_pdb/7k00_K_ca.pdb
+split_ca_pdb/7k00_L_ca.pdb
+split_ca_pdb/7k00_M_ca.pdb
+split_ca_pdb/7k00_N_ca.pdb
+split_ca_pdb/7k00_O_ca.pdb
+split_ca_pdb/7k00_P_ca.pdb
+split_ca_pdb/7k00_Q_ca.pdb
+split_ca_pdb/7k00_R_ca.pdb
+split_ca_pdb/7k00_S_ca.pdb
+split_ca_pdb/7k00_T_ca.pdb
+split_ca_pdb/7k00_U_ca.pdb
+split_ca_pdb/7k00_c_ca.pdb
+split_ca_pdb/7k00_d_ca.pdb
+split_ca_pdb/7k00_e_ca.pdb
+split_ca_pdb/7k00_f_ca.pdb
+split_ca_pdb/7k00_g_ca.pdb
+... (24 more lines)
+  [stderr] pdbKit: chain 'A' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'a' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'b' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'X' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'Y' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain 'Z' has no atoms matching the selection - skipped
+  [stderr] pdbKit: chain '5' has no atoms matching the selection - skipped
+  -> exit 0 in 11.6s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --atoms backbone --het none --no-water -o 7K00_backbone.cif
+  [stderr] wrote 7K00_backbone.cif
+  -> exit 0 in 18.6s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --hetatm-only -o 7K00_hetatm_only.cif
+  [stderr] wrote 7K00_hetatm_only.cif
+  -> exit 0 in 11.5s
+
+$ pdbkit extract /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --altloc best --no-hydrogens -o 7K00_single_conformer.cif
+  [stderr] wrote 7K00_single_conformer.cif
+  -> exit 0 in 13.1s
+
+$ pdbkit convert /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o 7K00.pdb
+  [stderr] pdbkit: error: This structure cannot be written in PDB format (329 residue number(s) outside -999..9999; 149338 atoms per model (PDB format limit is 99999)). Write mmCIF instead (--format cif / a .cif file name).
+  -> exit 2 in 7.9s
+
+$ pdbkit gaps /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o gaps.tsv
+  -> exit 0 in 7.9s
+
+$ pdbkit ligands /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o ligands.tsv
+  -> exit 0 in 7.8s
+
+$ pdbkit disulfide /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o disulfide.tsv
+  -> exit 0 in 7.8s
+
+$ pdbkit closecontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --ca-only -o closecontacts.tsv
+  -> exit 0 in 7.9s
+
+$ pdbkit watercontacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o watercontacts.tsv
+  -> exit 0 in 31.9s
+
+$ pdbkit neighbors /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o neighbors.tsv
+  -> exit 0 in 8.3s
+
+$ pdbkit torsion /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o torsion.tsv
+  -> exit 0 in 9.4s
+
+$ pdbkit iondist /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --step 0.5 -o iondist.tsv
+  -> exit 0 in 8.3s
+
+$ pdbkit sasa /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o sasa.tsv
+  -> exit 0 in 67.0s
+
+$ pdbkit contacts /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -t PAR --cutoff 4.0 -o contacts.tsv
+  -> exit 0 in 8.3s
+
+$ pdbkit distances /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -r A:2:CA --atom CA -c A -o distances.tsv
+  [stderr] pdbkit: error: Reference atom 'A:2:CA' not found.
+  -> exit 2 in 7.8s
+
+$ pdbkit param /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif
+residues	5587
+molecular_weight	621099.93
+pI	10.745
+fraction_titratable	0.342
+fraction_acidic	0.0992
+fraction_basic	0.2173
+charge_fully_ionised	660
+composition	{"4D4": 1, "ALA": 553, "ARG": 542, "ASN": 200, "ASP": 229, "CYS": 32, "D2T": 1, "GLN": 186, "GLU": 325, "GLY": 456, "HIS": 133, "IAS": 1, "ILE": 324, "LEU": 392, "LYS": 539, "MEQ": 1, "MET": 114, "MS6": 1, "PHE": 169, "PRO": 188, "SER": 251, "THR": 295, "TRP": 32, "TYR": 111, "VAL": 511}
+non_standard_residues	["4D4", "D2T", "IAS", "MEQ", "MS6"]
+  -> exit 0 in 7.9s
+
+$ pdbkit coulomb /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif
+coulomb_energy_kcal_mol	66.185
+  -> exit 0 in 8.3s
+
+$ pdbkit centerasu /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o 7K00_asu_in_cell.cif
+  [stderr] pdbkit: error: No crystallographic unit cell (ELECTRON MICROSCOPY files carry a 1 x 1 x 1 A placeholder cell); centerasu only applies to crystal structures.
+  -> exit 2 in 8.0s
+
+$ pdbkit renumber /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --start 1 -o 7K00_renumbered.cif
+  [stderr] wrote 7K00_renumbered.cif
+  -> exit 0 in 13.2s
+
+$ pdbkit rename /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --chain-map A:z -o 7K00_chainA_as_z.cif
+  [stderr] pdbkit: error: Cannot rename chain 'A' to 'z': chain 'z' already exists and residue 2 is in both. Rename or renumber one of them first.
+  -> exit 2 in 11.7s
+
+$ pdbkit setfield /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif --bfactor 0 --occupancy 1 -o 7K00_b0_occ1.cif
+  [stderr] wrote 7K00_b0_occ1.cif
+  -> exit 0 in 17.1s
+
+$ pdbkit sort /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -o 7K00_sorted.cif
+  [stderr] wrote 7K00_sorted.cif
+  -> exit 0 in 13.0s
+
+$ pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -d domains
+domains/7K00_domain_ss_info.csv
+  [stderr] /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -> domains/7K00_domain_ss_info.csv
+  -> exit 0 in 37.6s
+
+$ pdbkit domains /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -q -d domains_offline
+domains_offline/7K00_domain_ss_info.csv
+  [stderr] /home/kestrel/Projects/potential_projects/computational_geometry_projects/mayaviBiomolecules/casestudy/7k00.cif -> domains_offline/7K00_domain_ss_info.csv
+  -> exit 0 in 8.0s
+
+$ pdbkit hetnavi 7K00 -d hetnavi --save-raw
+Parsed 56 chain record(s).
+hetnavi/7K00_MG_101_z_interaction.csv
+hetnavi/7K00_MG_1602_A_interaction.csv
+hetnavi/7K00_MG_1603_A_interaction.csv
+hetnavi/7K00_MG_1606_A_interaction.csv
+hetnavi/7K00_MG_1607_A_interaction.csv
+hetnavi/7K00_MG_1608_A_interaction.csv
+hetnavi/7K00_MG_1609_A_interaction.csv
+hetnavi/7K00_MG_1610_A_interaction.csv
+hetnavi/7K00_MG_1611_A_interaction.csv
+hetnavi/7K00_MG_1612_A_interaction.csv
+hetnavi/7K00_MG_1613_A_interaction.csv
+hetnavi/7K00_MG_1614_A_interaction.csv
+hetnavi/7K00_MG_1615_A_interaction.csv
+hetnavi/7K00_MG_1616_A_interaction.csv
+hetnavi/7K00_MG_1617_A_interaction.csv
+hetnavi/7K00_MG_1618_A_interaction.csv
+hetnavi/7K00_MG_1619_A_interaction.csv
+hetnavi/7K00_MG_1620_A_interaction.csv
+hetnavi/7K00_MG_1621_A_interaction.csv
+hetnavi/7K00_MG_1622_A_interaction.csv
+hetnavi/7K00_MG_1623_A_interaction.csv
+hetnavi/7K00_MG_1624_A_interaction.csv
+hetnavi/7K00_MG_1625_A_interaction.csv
+hetnavi/7K00_MG_1626_A_interaction.csv
+... (267 more lines)
+  -> exit 0 in 6.5s
+

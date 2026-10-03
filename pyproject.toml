@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdbKit"
+version = "1.0.0"
+description = "One toolkit for PDB and mmCIF structure files: fetch, select, split, centre, edit, analyse, annotate."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ email = "yogeshjoshie1@gmail.com" }]
+dependencies = ["biopython>=1.80", "numpy>=1.22"]
+keywords = ["bioinformatics", "structural-biology", "pdb", "mmcif", "alphafold"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.optional-dependencies]
+dataframes = ["pandas"]
+test = ["pytest"]
+
+[project.scripts]
+pdbkit = "pdbkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: needs internet access (RCSB, AlphaFold DB, Het-PDB Navi, UniProt, KEGG)",
+    "oracle: compares against an external program (upstream tools, PyMOL, gemmi)",
+]
+filterwarnings = ["ignore::Bio.BiopythonWarning"]
