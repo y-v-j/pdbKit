@@ -1,0 +1,14 @@
+# GitHub Pages: README.md rendered with the Midnight Ink theme (_layouts/default.html).
+lang: en
+author: Yogesh
+tagline: "Toolkit for PDB and mmCIF structure files"
+nav:
+  - title: "Install"
+    url: "#installation"
+  - title: "Usage"
+    url: "#usage"
+  - title: "Docs"
+    url: "#documentation"
+license_name: "GPL-3.0"
+plugins:
+  - jekyll-seo-tag
